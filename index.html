@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CD Club — landing concept</title>
-  <meta name="description" content="One-page landing template for Civil Defense Club / tactical training community.">
+  <title>CD Club — Swift. Sharp. Steady</title>
+  <meta name="description" content="CD Club — спільнота для стрілецької та тактичної підготовки, тренувань, подій і практичних навичок.">
   <link rel="icon" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,22 +31,42 @@
 
     .instructors{background:#f8f4ec;color:var(--ink)}.section-head{display:grid;grid-template-columns:1fr .9fr;gap:30px;align-items:end;margin-bottom:34px}.section-head p{margin:0;color:#665d55}.instructor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.instructor-card{background:#fff;border:1px solid #e5ddcf;border-radius:24px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.08)}.instructor-card img{width:100%;height:340px;object-fit:cover}.instructor-meta{padding:24px}.instructor-meta b{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:999px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}.instructor-meta h3{font-family:Oswald,Impact,sans-serif;font-size:34px;margin:14px 0 8px;line-height:1}.instructor-meta p{margin:0;color:#675e56}.socials{display:flex;gap:8px;margin-top:18px}.socials span{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1px solid #ded4c7;font-size:12px;font-weight:800}
 
-    .reviews{background:#ece7dc;color:var(--ink)}.review-wrap{display:grid;grid-template-columns:.86fr 1.14fr;gap:34px;align-items:start}.review-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.review{background:#fff;border:1px solid #dfd6ca;border-radius:22px;padding:26px;box-shadow:0 10px 28px rgba(0,0,0,.06)}.stars{letter-spacing:2px;color:var(--accent);font-size:18px;margin-bottom:12px}.review p{margin:0;color:#4f4740}.reviewer{display:flex;align-items:center;gap:12px;margin-top:18px}.avatar{width:52px;height:52px;border-radius:50%;object-fit:cover}.reviewer strong{display:block}.reviewer span{display:block;color:#8a7f75;font-size:14px}
+    .reviews{background:#ece7dc;color:var(--ink)}.review-wrap{display:grid;grid-template-columns:.86fr 1.14fr;gap:34px;align-items:start}.review-carousel{overflow:hidden}.review-list{display:flex;gap:18px;transition:transform .42s ease;will-change:transform}.review{flex:0 0 calc((100% - 18px)/2);background:#fff;border:1px solid #dfd6ca;border-radius:22px;padding:26px;box-shadow:0 10px 28px rgba(0,0,0,.06)}.stars{letter-spacing:2px;color:var(--accent);font-size:18px;margin-bottom:12px}.review p{margin:0;color:#4f4740}.reviewer{display:flex;align-items:center;gap:12px;margin-top:18px}.avatar{width:52px;height:52px;border-radius:50%;object-fit:cover}.reviewer strong{display:block}.reviewer span{display:block;color:#8a7f75;font-size:14px}.review-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:18px}.review-arrow{width:44px;height:44px;border-radius:50%;border:1px solid #ded4c7;background:#fff;color:#151515;cursor:pointer;font-size:20px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.08)}.review-arrow:hover{border-color:var(--accent);color:var(--accent)}.review-counter{font-family:Oswald,Impact,sans-serif;font-size:24px;color:var(--accent);min-width:58px;text-align:center}
 
-    .gallery{background:#fff;color:var(--ink);overflow:hidden}.gallery-head{display:flex;align-items:end;justify-content:space-between;gap:28px}.gallery-head .lead{color:#6b625a}.gallery-actions{display:flex;align-items:center;gap:12px}.gallery-arrow{width:48px;height:48px;border-radius:50%;border:1px solid #ded4c7;background:#fff;color:#151515;cursor:pointer;font-size:20px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.08)}.gallery-arrow:hover{border-color:var(--accent);color:var(--accent)}.gallery-counter{font-family:Oswald,Impact,sans-serif;font-size:28px;color:var(--accent);min-width:58px;text-align:center}.gallery-slider{position:relative;margin-top:38px}.gallery-stage{position:relative;min-height:560px}.gallery-slide{position:absolute;top:50%;left:50%;width:min(760px,68vw);height:500px;transform:translate(-50%,-50%) scale(.74);opacity:0;z-index:1;transition:transform .5s ease,opacity .5s ease,left .5s ease;pointer-events:none}.gallery-slide.active{opacity:1;transform:translate(-50%,-50%) scale(1);z-index:5;pointer-events:auto}.gallery-slide.prev{left:13%;opacity:.42;transform:translate(-50%,-50%) scale(.74);z-index:2}.gallery-slide.next{left:87%;opacity:.42;transform:translate(-50%,-50%) scale(.74);z-index:2}.gallery-slide img{width:100%;height:100%;object-fit:cover;border-radius:28px;box-shadow:0 24px 70px rgba(0,0,0,.28)}.gallery-slide:after{content:"";position:absolute;inset:0;border-radius:28px;background:linear-gradient(180deg,transparent 52%,rgba(0,0,0,.62))}.gallery-caption{position:absolute;left:28px;right:28px;bottom:24px;color:#fff;z-index:2;display:flex;justify-content:space-between;align-items:end;gap:18px}.gallery-caption h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:36px;line-height:1;margin:0;text-shadow:0 8px 24px rgba(0,0,0,.5)}.gallery-caption span{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.16em;color:#eee}.gallery-thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:18px}.gallery-thumb{border:0;padding:0;background:transparent;border-radius:16px;overflow:hidden;aspect-ratio:4/3;opacity:.55;cursor:pointer;position:relative;transition:.2s}.gallery-thumb img{width:100%;height:100%;object-fit:cover}.gallery-thumb.active,.gallery-thumb:hover{opacity:1;transform:translateY(-2px)}.gallery-thumb:after{content:"";position:absolute;inset:0;border:2px solid transparent;border-radius:16px}.gallery-thumb.active:after{border-color:var(--accent)}
+    .gallery{background:#fff;color:var(--ink);overflow:hidden}.gallery-head{display:flex;align-items:end;justify-content:space-between;gap:28px}.gallery-head .lead{display:none}.gallery-actions{display:flex;align-items:center;gap:12px}.gallery-arrow{width:48px;height:48px;border-radius:50%;border:1px solid #ded4c7;background:#fff;color:#151515;cursor:pointer;font-size:20px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.08)}.gallery-arrow:hover{border-color:var(--accent);color:var(--accent)}.gallery-counter{font-family:Oswald,Impact,sans-serif;font-size:28px;color:var(--accent);min-width:58px;text-align:center}.gallery-slider{position:relative;margin-top:38px}.gallery-stage{position:relative;min-height:560px}.gallery-slide{position:absolute;top:50%;left:50%;width:min(760px,68vw);height:500px;transform:translate(-50%,-50%) scale(.74);opacity:0;z-index:1;transition:transform .5s ease,opacity .5s ease,left .5s ease;pointer-events:none}.gallery-slide.active{opacity:1;transform:translate(-50%,-50%) scale(1);z-index:5;pointer-events:auto}.gallery-slide.prev{left:13%;opacity:.42;transform:translate(-50%,-50%) scale(.74);z-index:2}.gallery-slide.next{left:87%;opacity:.42;transform:translate(-50%,-50%) scale(.74);z-index:2}.gallery-slide img{width:100%;height:100%;object-fit:cover;border-radius:28px;box-shadow:0 24px 70px rgba(0,0,0,.28)}.gallery-slide:after{display:none}.gallery-caption{display:none}.gallery-caption h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:36px;line-height:1;margin:0;text-shadow:0 8px 24px rgba(0,0,0,.5)}.gallery-caption span{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.16em;color:#eee}.gallery-thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:18px}.gallery-thumb{border:0;padding:0;background:transparent;border-radius:16px;overflow:hidden;aspect-ratio:4/3;opacity:.55;cursor:pointer;position:relative;transition:.2s}.gallery-thumb img{width:100%;height:100%;object-fit:cover}.gallery-thumb.active,.gallery-thumb:hover{opacity:1;transform:translateY(-2px)}.gallery-thumb:after{content:"";position:absolute;inset:0;border:2px solid transparent;border-radius:16px}.gallery-thumb.active:after{border-color:var(--accent)}
 
-    .certificate{background:#1a1d1f}.cert-box{display:grid;grid-template-columns:1fr .92fr;gap:28px;align-items:center;background:#212428;border:1px solid var(--line);border-radius:34px;overflow:hidden;box-shadow:var(--shadow)}.cert-copy{padding:48px}.gift-card{padding:34px;display:grid;place-items:center}.gift-ticket{width:min(100%,430px);min-height:280px;background:linear-gradient(135deg,#2d3136,#15181a);border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:34px;box-shadow:0 20px 50px rgba(0,0,0,.28);position:relative;overflow:hidden}.gift-ticket:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(255,106,45,.18),transparent 26%)}.gift-ticket h3{position:relative;font-family:Oswald,Impact,sans-serif;font-size:54px;line-height:.9;margin:0 0 14px;text-transform:uppercase}.gift-ticket p{position:relative;margin:0;max-width:300px;color:#d1c9be}.gift-ticket b{position:absolute;right:26px;bottom:20px;font-size:66px;font-family:Oswald,Impact,sans-serif;color:rgba(255,255,255,.12);letter-spacing:.08em}
+    .certificate{background:#1a1d1f}.cert-box{display:grid;grid-template-columns:1fr .92fr;gap:28px;align-items:center;background:#212428;border:1px solid var(--line);border-radius:34px;overflow:hidden;box-shadow:var(--shadow)}.cert-copy{padding:48px}.gift-card{padding:24px 24px 24px 0;display:grid;place-items:center}.gift-card img{width:min(100%,620px);height:auto;display:block;border-radius:22px;box-shadow:0 20px 50px rgba(0,0,0,.28);object-fit:cover}
 
     .volunteer{background:#121416}.volunteer-card{border:1px solid var(--line);background:linear-gradient(180deg,#181b1f,#111315);border-radius:34px;padding:48px;box-shadow:var(--shadow)}.volunteer-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.vol-item{background:#202327;border-radius:20px;padding:22px;border:1px solid var(--line)}.vol-item b{font-family:Oswald,Impact,sans-serif;color:var(--accent);font-size:34px;line-height:1;display:block;margin-bottom:10px}.vol-item p{margin:0;color:#c6bfb7}
 
     .safety{background:#f8f4ec;color:var(--ink)}.safety-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:38px;align-items:center}.safety-photo img{width:100%;height:100%;min-height:540px;object-fit:cover;border-radius:28px;box-shadow:0 14px 34px rgba(0,0,0,.1)}.rules{display:grid;gap:16px;margin-top:28px}.rule{display:grid;grid-template-columns:46px 1fr;gap:16px;background:#fff;border:1px solid #e2d9cd;border-radius:18px;padding:20px}.rule b{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#f3ede4;color:var(--accent);font-family:Oswald,Impact,sans-serif;font-size:28px}.rule h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:28px;line-height:1;margin:0 0 8px}.rule p{margin:0;color:#5e554d}
 
-    .footer{background:#0d0f10;color:#ddd}.insta-strip{display:grid;grid-template-columns:repeat(5,1fr)}.insta-strip img{width:100%;height:160px;object-fit:cover}.footer-main{padding:52px 0 24px}.footer-grid{display:grid;grid-template-columns:1.1fr .8fr .8fr 1fr;gap:30px}.footer-logo{height:58px;width:auto;margin-bottom:14px}.footer h4{margin:0 0 16px;font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:28px;color:#fff}.footer p,.footer a{margin:8px 0;color:#aaa}.newsletter{display:flex;gap:10px;margin-top:12px}.newsletter input{flex:1;min-height:46px;border-radius:999px;border:1px solid var(--line);background:#181b1e;color:#fff;padding:0 16px}.newsletter button{min-height:46px;border:0;border-radius:999px;background:var(--accent);color:#fff;padding:0 18px;font-weight:900;text-transform:uppercase;font-size:12px;letter-spacing:.1em}.bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:28px;padding-top:18px;display:flex;justify-content:space-between;gap:18px;color:#757575;font-size:13px}
+    .footer{background:#0d0f10;color:#ddd}.insta-strip{display:grid;grid-template-columns:repeat(5,1fr)}.insta-strip a{display:block;position:relative;overflow:hidden;cursor:pointer}.insta-strip img{width:100%;height:160px;object-fit:cover;transition:transform .25s ease,opacity .25s ease}.insta-strip a:hover img{transform:scale(1.04);opacity:.92}.footer-main{padding:52px 0 24px}.footer-grid{display:grid;grid-template-columns:1.1fr .8fr .8fr 1fr;gap:30px}.footer-logo{height:58px;width:auto;margin-bottom:14px}.footer h4{margin:0 0 16px;font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:28px;color:#fff}.footer p,.footer a{margin:8px 0;color:#aaa}.newsletter{display:flex;gap:10px;margin-top:12px}.newsletter input{flex:1;min-height:46px;border-radius:999px;border:1px solid var(--line);background:#181b1e;color:#fff;padding:0 16px}.newsletter button{min-height:46px;border:0;border-radius:999px;background:var(--accent);color:#fff;padding:0 18px;font-weight:900;text-transform:uppercase;font-size:12px;letter-spacing:.1em}.bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:28px;padding-top:18px;display:flex;justify-content:space-between;gap:18px;color:#757575;font-size:13px}
 
     .reveal{opacity:0;transform:translateY(18px);transition:.55s}.reveal.visible{opacity:1;transform:none}
     @media(max-width:1080px){.hero-grid,.center-grid,.program-grid,.review-wrap,.cert-box,.safety-grid,.section-head{grid-template-columns:1fr}.quote-layout{grid-template-columns:1fr 260px}.footer-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:940px){.menu,.small-link,.nav-cta .btn{display:none}.burger{display:block}.nav.open .menu{display:flex;position:absolute;top:82px;left:0;right:0;flex-direction:column;align-items:flex-start;background:#111315;padding:22px;border-bottom:1px solid var(--line)}.center-cards,.instructor-grid,.volunteer-list,.review-list{grid-template-columns:1fr 1fr}.gallery-slide{width:min(680px,76vw);height:460px}.gallery-thumbs{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:700px){.wrap{width:min(var(--max),calc(100% - 28px))}.section{padding:70px 0}.center-cards,.instructor-grid,.review-list,.volunteer-list,.footer-grid,.quote-layout,.newsletter{grid-template-columns:1fr}.program-item,.rule{grid-template-columns:1fr}.gallery-stage{min-height:430px}.gallery-slide,.gallery-slide.active,.gallery-slide.prev,.gallery-slide.next{width:100%;height:390px;left:50%;opacity:0;transform:translate(-50%,-50%) scale(.9)}.gallery-slide.active{opacity:1;transform:translate(-50%,-50%) scale(1)}.gallery-caption h3{font-size:28px}.gallery-head{display:block}.gallery-actions{margin-top:20px}.gallery-thumbs{grid-template-columns:repeat(2,1fr)}.cert-copy,.volunteer-card,.center-left,.center-right{padding:34px 24px}.gift-card{padding:24px}.insta-strip{grid-template-columns:repeat(2,1fr)}.insta-strip img{height:130px}.bottom{flex-direction:column}.thumbs{grid-template-columns:repeat(3,1fr)}.mini-slides{aspect-ratio:4/4.6}.quote-layout{grid-template-columns:1fr}.portrait-card img{height:320px}}
+    @media(max-width:940px){.menu,.small-link,.nav-cta .btn{display:none}.burger{display:block}.nav.open .menu{display:flex;position:absolute;top:82px;left:0;right:0;flex-direction:column;align-items:flex-start;background:#111315;padding:22px;border-bottom:1px solid var(--line)}.center-cards,.instructor-grid,.volunteer-list{grid-template-columns:1fr 1fr}.gallery-slide{width:min(680px,76vw);height:460px}.gallery-thumbs{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:700px){.wrap{width:min(var(--max),calc(100% - 28px))}.section{padding:70px 0}.center-cards,.instructor-grid,.volunteer-list,.footer-grid,.quote-layout,.newsletter{grid-template-columns:1fr}.program-item,.rule{grid-template-columns:1fr}.gallery-stage{min-height:430px}.gallery-slide,.gallery-slide.active,.gallery-slide.prev,.gallery-slide.next{width:100%;height:390px;left:50%;opacity:0;transform:translate(-50%,-50%) scale(.9)}.gallery-slide.active{opacity:1;transform:translate(-50%,-50%) scale(1)}.gallery-caption h3{font-size:28px}.gallery-head{display:block}.gallery-actions{margin-top:20px}.review{flex-basis:100%}.gallery-thumbs{grid-template-columns:repeat(2,1fr)}.cert-copy,.volunteer-card,.center-left,.center-right{padding:34px 24px}.gift-card{padding:24px}.insta-strip{grid-template-columns:repeat(2,1fr)}.insta-strip img{height:130px}.bottom{flex-direction:column}.thumbs{grid-template-columns:repeat(3,1fr)}.mini-slides{aspect-ratio:4/4.6}.quote-layout{grid-template-columns:1fr}.portrait-card img{height:320px}}
+
+    /* Final fixes */
+    .review-carousel{overflow:hidden!important}
+    .review-list{display:flex!important;grid-template-columns:none!important;gap:18px!important;transition:transform .42s ease!important;will-change:transform!important}
+    .review{flex:0 0 calc((100% - 18px)/2)!important}
+    .review-actions{display:flex!important;align-items:center;justify-content:flex-end;gap:12px;margin-top:18px}
+    .review-arrow{width:44px;height:44px;border-radius:50%;border:1px solid #ded4c7;background:#fff;color:#151515;cursor:pointer;font-size:20px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.08)}
+    .review-arrow:hover{border-color:var(--accent);color:var(--accent)}
+    .review-counter{font-family:Oswald,Impact,sans-serif;font-size:24px;color:var(--accent);min-width:58px;text-align:center}
+    .gallery-head .lead{display:none!important}
+    .gallery-slide:after,.gallery-caption{display:none!important}
+    .insta-strip a{display:block;position:relative;overflow:hidden;cursor:pointer}
+    .insta-strip img{transition:transform .25s ease,opacity .25s ease}
+    .insta-strip a:hover img{transform:scale(1.04);opacity:.92}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.82);display:flex;align-items:center;justify-content:center;padding:28px;opacity:0;visibility:hidden;pointer-events:none;transition:.25s;z-index:120}
+    .lightbox.open{opacity:1;visibility:visible;pointer-events:auto}
+    .lightbox-dialog{position:relative;max-width:min(1100px,92vw);max-height:90vh;display:flex;align-items:center;justify-content:center}
+    .lightbox img{max-width:100%;max-height:88vh;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+    .lightbox-close{position:absolute;top:-14px;right:-14px;width:42px;height:42px;border-radius:50%;border:0;background:#fff;color:#111;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 10px 28px rgba(0,0,0,.24)}
+    @media(max-width:700px){.review{flex-basis:100%!important}}
   </style>
 </head>
 <body>
@@ -54,14 +74,15 @@
     <div class="wrap inner">
       <a class="brand" href="#top"><img src="assets/cd-club-logo.svg" alt="CD Club"></a>
       <nav class="menu" id="menu">
-        <a href="#about">Про центр</a>
+        <a href="#about">Хто ми</a>
         <a href="#program">Навчання</a>
         <a href="#instructors">Інструктори</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#gift">Сертифікат</a>
-        <a href="#footer">Контакти</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#gift">Сертифікати</a>
+        <a href="#corporate">Для компаній</a>
+        <a href="#join">Контакти</a>
       </nav>
-      <div class="nav-cta"><a class="small-link" href="https://www.instagram.com/cd_club_ua/">@cd_club_ua</a><a class="btn primary" href="#join">Записатися</a><button class="burger" id="burger" aria-label="Меню">☰</button></div>
+      <div class="nav-cta"><a class="small-link" href="https://www.instagram.com/cd_club_ua/" target="_blank" rel="noopener">@cd_club_ua</a><a class="btn primary" href="#join">Записатися</a><button class="burger" id="burger" aria-label="Меню">☰</button></div>
     </div>
   </header>
 
@@ -70,21 +91,21 @@
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
           <span class="overline">Civil Defense Club</span>
-          <h1 class="h1">Training. Community. Discipline.</h1>
-          <p class="lead">Темний лендинг для тактичного клубу з великим hero-слайдером, реальними фото, секціями навчання, інструкторів, галереї та волонтерства.</p>
-          <div class="hero-pills"><span class="pill">Реальні тренування</span><span class="pill">Безпека</span><span class="pill">Спільнота</span></div>
-          <div class="notice">Формат легко адаптувати під ваші тексти, контакти та розклад</div>
+          <h1 class="h1">Swift. Sharp. Steady</h1>
+          <p class="lead">Ми створили спільноту, де кожен може здобути стрілецькі та тактичні навички від інструкторів із досвідом.</p>
+          <div class="hero-pills"><span class="pill">Практичні навички</span><span class="pill">Безпека</span><span class="pill">Спільнота</span></div>
+          <div class="notice">«Наш клуб — це спільнота, де знання, відповідальність і підтримка мають значення» — Олексій “Білий”, співзасновник клубу</div>
           <div class="btn-row"><a class="btn primary" href="#join">Приєднатися</a><a class="btn ghost" href="#gallery">Дивитися фото</a></div>
         </div>
         <div class="hero-slider reveal">
-          <div class="slider-top"><span>Hero slider</span><div class="controls"><button class="arrow" data-hero-prev type="button">‹</button><button class="arrow" data-hero-next type="button">›</button></div></div>
+          <div class="slider-top"><span>CD Club / Training</span><div class="controls"><button class="arrow" data-hero-prev type="button">‹</button><button class="arrow" data-hero-next type="button">›</button></div></div>
           <div class="slides">
-            <div class="slide active" data-title="Командні сценарії на полігоні" data-kicker="Slide 01"><img src="assets/hero-1.jpg" alt="Командні сценарії"></div>
-            <div class="slide" data-title="Тренування в карʼєрі та робота з укриттям" data-kicker="Slide 02"><img src="assets/hero-2.jpg" alt="Тренування в карʼєрі"></div>
-            <div class="slide" data-title="Динамічні вправи та контроль позиції" data-kicker="Slide 03"><img src="assets/hero-3.jpg" alt="Динамічні вправи"></div>
-            <div class="caption"><strong id="capTitle">Командні сценарії на полігоні</strong><small id="capKicker">Slide 01</small></div>
+            <div class="slide active" data-title="Влучність і динаміка" data-kicker="01"><img src="assets/header-slide-1.png" alt="Влучність і динаміка"></div>
+            <div class="slide" data-title="Відпрацювання різних положень для стрільби" data-kicker="02"><img src="assets/header-slide-2.png" alt="Відпрацювання різних положень для стрільби"></div>
+            <div class="slide" data-title="Робота двійками" data-kicker="03"><img src="assets/header-slide-3.png" alt="Робота двійками"></div>
+            <div class="caption"><strong id="capTitle">Влучність і динаміка</strong><small id="capKicker">01</small></div>
           </div>
-          <div class="thumbs"><button class="thumb active" data-hero-go="0" type="button"><img src="assets/hero-1.jpg" alt="Мініатюра 1"></button><button class="thumb" data-hero-go="1" type="button"><img src="assets/hero-2.jpg" alt="Мініатюра 2"></button><button class="thumb" data-hero-go="2" type="button"><img src="assets/hero-3.jpg" alt="Мініатюра 3"></button></div>
+          <div class="thumbs"><button class="thumb active" data-hero-go="0" type="button"><img src="assets/header-slide-1.png" alt="Мініатюра 1"></button><button class="thumb" data-hero-go="1" type="button"><img src="assets/header-slide-2.png" alt="Мініатюра 2"></button><button class="thumb" data-hero-go="2" type="button"><img src="assets/header-slide-3.png" alt="Мініатюра 3"></button></div>
         </div>
       </div>
     </section>
@@ -92,11 +113,16 @@
     <section class="center-combo" id="about">
       <div class="wrap center-grid reveal">
         <div class="center-left">
-          <div class="center-intro"><h2 class="h2">Хто ми ?</h2><div class="mark"></div><p>Повернув попередній блок замість секції “Навчання / Полігон / Комʼюніті” та “Відгук та атмосфера”. Ліва частина — три картки, права — темний блок із цитатою та фото.</p></div>
+          <div class="center-intro">
+            <div class="mark"></div>
+            <span class="overline">Хто ми?</span>
+            <h2 class="h2">CD Club</h2>
+            <p>CD Club — це коли стрільба, тактичні навички і командна робота об’єднуються в одне: ефективні та цікаві заняття у спільноті, якій можна довіряти.</p>
+          </div>
           <div class="center-cards">
-            <article class="center-card"><div class="card-icon">01</div><h3>Classes &amp; Training</h3><p>Базові заняття, інструктаж, командна комунікація та безпечний старт для новачків.</p><a href="#program">→</a></article>
-            <article class="center-card"><div class="card-icon">02</div><h3>The Ranges</h3><p>Полігон, сценарні локації, робота з укриттям та практика в реальних польових умовах.</p><a href="#gallery">→</a></article>
-            <article class="center-card"><div class="card-icon">03</div><h3>Membership</h3><p>Регулярні тренування, командні події, закриті ігри та участь у волонтерських активностях.</p><a href="#join">→</a></article>
+            <article class="center-card"><div class="card-icon">01</div><h3>Новачки та рекси</h3><p>Безпечний старт для новачків і розвиток для тих, хто хоче більшого.</p><a href="#program">→</a></article>
+            <article class="center-card"><div class="card-icon">02</div><h3>Практичні навички</h3><p>Стрільба, такмед, робота в команді та реалістичні сценарії.</p><a href="#program">→</a></article>
+            <article class="center-card"><div class="card-icon">03</div><h3>Спільнота</h3><p>Люди, які підтримують одне одного, тренуються разом і ростуть разом.</p><a href="#join">→</a></article>
           </div>
         </div>
       </div>
@@ -105,59 +131,64 @@
     <section class="section programs" id="program">
       <div class="wrap program-grid">
         <div class="reveal">
-          <span class="overline">Чому можна навчитися?</span>
-          <h2 class="h2">Програми та формати</h2>
-          <p class="lead">Ліворуч — короткий опис і програми. Праворуч — уже не одиночне фото, а окремий слайдер “Фото з тренувань”.</p>
+          <span class="overline">Чому можна навчитись?</span>
+          <h2 class="h2">Напрямки та формати</h2>
+          <p class="lead">Стрілецька підготовка, тактичні навички та спеціальні тренінги — усе необхідне для розвитку впевненості, дисципліни та практичних умінь.</p>
           <div class="program-list">
-            <article class="program-item"><b>01</b><div><h3>Базовий курс</h3><p>Правила безпеки, спорядження, перша взаємодія з командою, базові сценарії та рух по полігону.</p></div></article>
-            <article class="program-item"><b>02</b><div><h3>Тактичні сценарії</h3><p>Переміщення, звʼязок у групі, укриття, зміна позицій та командна координація.</p></div></article>
-            <article class="program-item"><b>03</b><div><h3>Тренування під ключ</h3><p>Групові формати, корпоративні ігри, інструктори, спорядження та супровід на локації.</p></div></article>
+            <article class="program-item"><b>01</b><div><h3>Стрілецька майстерність</h3><p>Групові та індивідуальні тренування. Робота з AR-15, АК, рушницею та пістолетом, розвиток точності, швидкості та впевненого контролю зброї на різних дистанціях.</p></div></article>
+            <article class="program-item"><b>02</b><div><h3>Тактична підготовка</h3><p>Пересування, робота в команді, взаємодія в групі. Практичні заняття з використанням airsoft-обладнання та реалістичних навчальних сценаріїв.</p></div></article>
+            <article class="program-item"><b>03</b><div><h3>Тренінги під ключ</h3><p>Корпоративні та групові заходи зі стрільби, тактики, тактичної медицини, мінно-вибухової безпеки.</p></div></article>
           </div>
         </div>
         <div class="training-slider reveal">
           <div class="slider-top"><span>Фото з тренувань</span><div class="controls"><button class="arrow" data-training-prev type="button">‹</button><button class="arrow" data-training-next type="button">›</button></div></div>
           <div class="mini-slides">
-            <div class="mini-slide active" data-title="Командна підготовка" data-kicker="01"><img src="assets/hero-3.jpg" alt="Фото з тренування 1"></div>
-            <div class="mini-slide" data-title="Робота в карʼєрі" data-kicker="02"><img src="assets/hero-2.jpg" alt="Фото з тренування 2"></div>
-            <div class="mini-slide" data-title="Злагодження команди" data-kicker="03"><img src="assets/hero-1.jpg" alt="Фото з тренування 3"></div>
-            <div class="mini-slide" data-title="Групова подія" data-kicker="04"><img src="assets/wide-group.jpg" alt="Фото з тренування 4"></div>
-            <div class="mini-caption"><strong id="trainingTitle">Командна підготовка</strong><small id="trainingKicker">01</small></div>
+            <div class="mini-slide active" data-title="Стрілецька майстерність" data-kicker="01"><img src="assets/program-slide-1.png" alt="Стрілецька майстерність"></div>
+            <div class="mini-slide" data-title="Тактична підготовка" data-kicker="02"><img src="assets/program-slide-2.png" alt="Тактична підготовка"></div>
+            <div class="mini-slide" data-title="Робота в команді" data-kicker="03"><img src="assets/program-slide-3.png" alt="Робота в команді"></div>
+            <div class="mini-caption"><strong id="trainingTitle">Стрілецька майстерність</strong><small id="trainingKicker">01</small></div>
           </div>
-          <div class="mini-dots"><button class="mini-dot active" data-training-go="0" type="button"></button><button class="mini-dot" data-training-go="1" type="button"></button><button class="mini-dot" data-training-go="2" type="button"></button><button class="mini-dot" data-training-go="3" type="button"></button></div>
+          <div class="mini-dots"><button class="mini-dot active" data-training-go="0" type="button"></button><button class="mini-dot" data-training-go="1" type="button"></button><button class="mini-dot" data-training-go="2" type="button"></button></div>
         </div>
       </div>
     </section>
 
     <section class="section instructors" id="instructors">
       <div class="wrap">
-        <div class="section-head"><div><span class="overline">Our instructors</span><h2 class="h2">Інструктори та координатори</h2></div><p>Секція в стилі Honor Gun Club 2: великі фото-картки, роль, імʼя, коротка спеціалізація та соціальні іконки.</p></div>
+        <div class="section-head"><div><span class="overline">Наші інструктори</span><h2 class="h2">Тренери та координатори</h2></div><p>Наші тренери — це люди, які знають цінність якісної підготовки та діляться тим, що справді працює на практиці.</p></div>
         <div class="instructor-grid reveal">
-          <article class="instructor-card"><img src="assets/portrait.jpg" alt="Інструктор"><div class="instructor-meta"><b>Lead instructor</b><h3>Інструктор 01</h3><p>Базова стрільба, безпека, позиції.</p><div class="socials"><span>IG</span><span>FB</span><span>YT</span></div></div></article>
-          <article class="instructor-card"><img src="assets/hero-3.jpg" alt="Інструктор"><div class="instructor-meta"><b>Field trainer</b><h3>Інструктор 02</h3><p>Робота двійкою/четвіркою, укриття.</p><div class="socials"><span>IG</span><span>FB</span><span>YT</span></div></div></article>
-          <article class="instructor-card"><img src="assets/hero-2.jpg" alt="Інструктор"><div class="instructor-meta"><b>Coordinator</b><h3>Координатор</h3><p>Групи, події, сертифікати, записи.</p><div class="socials"><span>IG</span><span>FB</span><span>YT</span></div></div></article>
+          <article class="instructor-card"><img src="assets/instructor-bilyi.jpg" alt="Олексій Білий"><div class="instructor-meta"><b>Співзасновник клубу</b><h3>“Білий”</h3><p>Має за плечима понад 10 років стрілецького досвіду. З середини 2022 року займався підготовкою інструкторів для ТРО та ЗСУ, а також готував спеціалістів з ГУР, СБУ та поліції.</p><div class="socials"><span>IG</span><span>FB</span><span>YT</span></div></div></article>
+          <article class="instructor-card"><img src="assets/instructor-istok.jpg" alt="Друг Істок"><div class="instructor-meta"><b>Запрошені інструктори</b><h3>Друг “Істок”</h3><p>Завдяки йому, ми залучаємо бійців з діючих підрозділів як запрошених інструкторів, щоб передавати учасникам перевірені на практиці знання та навички з реального поля бою.</p><div class="socials"><span>IG</span><span>FB</span><span>YT</span></div></div></article>
+          <article class="instructor-card"><img src="assets/instructor-yevheniia.jpg" alt="Євгенія"><div class="instructor-meta"><b>Координаторка</b><h3>Євгенія</h3><p>Допомагає людям зробити перший крок у світ стрілецької та тактичної підготовки, координує тренування, події та життя клубної спільноти.</p><div class="socials"><span>IG</span><span>FB</span><span>YT</span></div></div></article>
         </div>
       </div>
     </section>
 
     <section class="section reviews" id="reviews">
       <div class="wrap review-wrap">
-        <div><span class="overline">Customer reviews</span><h2 class="h2">Що кажуть учасники</h2><p class="lead" style="color:#6b625a">Секцію зроблено у форматі карток, як customer reviews у Weapon Shop: короткий текст, рейтинг, імʼя та місто/роль.</p></div>
-        <div class="review-list reveal">
-          <article class="review"><div class="stars">★★★★★</div><p>“Крута подача, нормальний темп і зрозумілий інструктаж. Після заняття реально знаєш, що підтягнути.”</p><div class="reviewer"><img class="avatar" src="assets/portrait.jpg" alt="Учасник"><div><strong>Андрій</strong><span>Новачок</span></div></div></article>
-          <article class="review"><div class="stars">★★★★★</div><p>“Брали заняття для групи. Все чітко: таймінг, спорядження, безпека, розбір після вправ.”</p><div class="reviewer"><img class="avatar" src="assets/hero-3.jpg" alt="Учасник"><div><strong>Команда</strong><span>Групове тренування</span></div></div></article>
-          <article class="review"><div class="stars">★★★★★</div><p>“Найцінніше — атмосфера. Немає пафосу, є практика, дисципліна і нормальна підтримка.”</p><div class="reviewer"><img class="avatar" src="assets/hero-1.jpg" alt="Учасник"><div><strong>Олег</strong><span>Регулярний учасник</span></div></div></article>
-          <article class="review"><div class="stars">★★★★★</div><p>“Сценарії цікаві, фото сильні, інструктори пояснюють без зайвої води.”</p><div class="reviewer"><img class="avatar" src="assets/hero-2.jpg" alt="Учасник"><div><strong>Марина</strong><span>Подія спільноти</span></div></div></article>
-        </div>
-      </div>
+        <div><span class="overline">Відгуки</span><h2 class="h2">Що кажуть учасники</h2><p class="lead" style="color:#6b625a">Найкраще про CD Club розповідають люди, які тренуються разом з нами. Для когось це був перший досвід зі зброєю, для когось — черговий крок у розвитку навичок. Але всіх об'єднує одне: якісні тренування, підтримка однодумців та атмосфера, в яку хочеться повертатися.</p></div>
+        <div class="review-carousel reveal">
+          <div class="review-list" id="reviewTrack">
+            <article class="review"><div class="stars">★★★★★</div><p>“Civil Defense Club справив на мене дуже позитивне враження. Тут панує дружня атмосфера, завдяки якій тренування проходять комфортно та з інтересом.”</p><div class="reviewer"><img class="avatar" src="assets/review-son.png" alt="СОН" style="object-position:52% 28%"><div><strong>СОН</strong><span>Постійний учасник</span></div></div></article>
+            <article class="review"><div class="stars">★★★★★</div><p>“CDC для мене не просто спільнота та клуб по інтересам, це як велика сім’я та коло однодумців. Недільні полігони та зброя для мене — це не просто улюблене хобі — це відпочинок, це драйв та адреналін!)”</p><div class="reviewer"><img class="avatar" src="assets/review-marina.png" alt="Марина" style="object-position:58% 34%"><div><strong>Марина</strong><span>Подія спільноти</span></div></div></article>
+            <article class="review"><div class="stars">★★★★★</div><p>“До клубу прийшов абсолютним нубом. Уже після першого заняття зник страх перед зброєю і з'явилося розуміння базових принципів. А ще тут крута атмосфера і професійний підхід.”</p><div class="reviewer"><img class="avatar" src="assets/review-oleg.png" alt="Олег" style="object-position:42% 44%"><div><strong>Олег</strong><span>Новачок</span></div></div></article>
+            <article class="review"><div class="stars">★★★★★</div><p>“Брали заняття для групи. Все чітко: таймінг, спорядження, безпека, розбір після вправ.”</p><div class="reviewer"><img class="avatar" src="assets/review-team.png" alt="Команда" style="object-position:62% 48%"><div><strong>Команда</strong><span>Групове тренування</span></div></div></article>
+          </div>
+          <div class="review-actions">
+            <button class="review-arrow" data-review-prev type="button" aria-label="Попередні відгуки">‹</button>
+            <div class="review-counter"><span id="reviewCurrent">01</span>/<span id="reviewTotal">03</span></div>
+            <button class="review-arrow" data-review-next type="button" aria-label="Наступні відгуки">›</button>
+          </div>
+        </div>      </div>
     </section>
 
     <section class="section gallery" id="gallery">
       <div class="wrap">
         <div class="gallery-head">
           <div>
-            <span class="overline">Gallery</span>
+            <span class="overline">Галерея</span>
             <h2 class="h2">Фото з тренувань</h2>
-            <p class="lead">Повноцінний слайдер у стилі Honor Gun Club 2: велике активне фото по центру, сусідні кадри збоку, стрілки, лічильник і мініатюри.</p>
+            <p class="lead">Трохи атмосфери наших занять, подій та спільноти.</p>
           </div>
           <div class="gallery-actions">
             <button class="gallery-arrow" data-gallery-prev type="button" aria-label="Попереднє фото">‹</button>
@@ -168,44 +199,56 @@
 
         <div class="gallery-slider reveal" aria-label="Фото з тренувань">
           <div class="gallery-stage">
-            <article class="gallery-slide active" data-title="Командне тренування" data-kicker="CD Club / 01"><img src="assets/hero-1.jpg" alt="Командне тренування"><div class="gallery-caption"><h3>Командне тренування</h3><span>CD Club / 01</span></div></article>
-            <article class="gallery-slide next" data-title="Робота в карʼєрі" data-kicker="CD Club / 02"><img src="assets/hero-2.jpg" alt="Робота в карʼєрі"><div class="gallery-caption"><h3>Робота в карʼєрі</h3><span>CD Club / 02</span></div></article>
-            <article class="gallery-slide" data-title="Позиція та контроль" data-kicker="CD Club / 03"><img src="assets/hero-3.jpg" alt="Позиція та контроль"><div class="gallery-caption"><h3>Позиція та контроль</h3><span>CD Club / 03</span></div></article>
-            <article class="gallery-slide" data-title="Комʼюніті" data-kicker="CD Club / 04"><img src="assets/portrait.jpg" alt="Учасник клубу"><div class="gallery-caption"><h3>Комʼюніті</h3><span>CD Club / 04</span></div></article>
-            <article class="gallery-slide" data-title="Відгуки учасників" data-kicker="CD Club / 05"><img src="assets/quote-card.jpg" alt="Відгуки учасників"><div class="gallery-caption"><h3>Відгуки учасників</h3><span>CD Club / 05</span></div></article>
-            <article class="gallery-slide prev" data-title="Групова подія" data-kicker="CD Club / 06"><img src="assets/wide-group.jpg" alt="Групова подія"><div class="gallery-caption"><h3>Групова подія</h3><span>CD Club / 06</span></div></article>
+            <article class="gallery-slide active" data-title="" data-kicker=""><img src="assets/training-final-1.png" alt="Фото з тренувань 1"></article>
+            <article class="gallery-slide next" data-title="" data-kicker=""><img src="assets/training-final-2.png" alt="Фото з тренувань 2"></article>
+            <article class="gallery-slide" data-title="" data-kicker=""><img src="assets/training-final-3.png" alt="Фото з тренувань 3"></article>
+            <article class="gallery-slide" data-title="" data-kicker=""><img src="assets/training-final-4.png" alt="Фото з тренувань 4"></article>
+            <article class="gallery-slide" data-title="" data-kicker=""><img src="assets/training-final-5.png" alt="Фото з тренувань 5"></article>
+            <article class="gallery-slide prev" data-title="" data-kicker=""><img src="assets/training-final-6.png" alt="Фото з тренувань 6"></article>
           </div>
           <div class="gallery-thumbs">
-            <button class="gallery-thumb active" data-gallery-go="0" type="button" aria-label="Фото 1"><img src="assets/hero-1.jpg" alt="Мініатюра 1"></button>
-            <button class="gallery-thumb" data-gallery-go="1" type="button" aria-label="Фото 2"><img src="assets/hero-2.jpg" alt="Мініатюра 2"></button>
-            <button class="gallery-thumb" data-gallery-go="2" type="button" aria-label="Фото 3"><img src="assets/hero-3.jpg" alt="Мініатюра 3"></button>
-            <button class="gallery-thumb" data-gallery-go="3" type="button" aria-label="Фото 4"><img src="assets/portrait.jpg" alt="Мініатюра 4"></button>
-            <button class="gallery-thumb" data-gallery-go="4" type="button" aria-label="Фото 5"><img src="assets/quote-card.jpg" alt="Мініатюра 5"></button>
-            <button class="gallery-thumb" data-gallery-go="5" type="button" aria-label="Фото 6"><img src="assets/wide-group.jpg" alt="Мініатюра 6"></button>
+            <button class="gallery-thumb active" data-gallery-go="0" type="button" aria-label="Фото 1"><img src="assets/training-final-1.png" alt="Мініатюра 1"></button>
+            <button class="gallery-thumb" data-gallery-go="1" type="button" aria-label="Фото 2"><img src="assets/training-final-2.png" alt="Мініатюра 2"></button>
+            <button class="gallery-thumb" data-gallery-go="2" type="button" aria-label="Фото 3"><img src="assets/training-final-3.png" alt="Мініатюра 3"></button>
+            <button class="gallery-thumb" data-gallery-go="3" type="button" aria-label="Фото 4"><img src="assets/training-final-4.png" alt="Мініатюра 4"></button>
+            <button class="gallery-thumb" data-gallery-go="4" type="button" aria-label="Фото 5"><img src="assets/training-final-5.png" alt="Мініатюра 5"></button>
+            <button class="gallery-thumb" data-gallery-go="5" type="button" aria-label="Фото 6"><img src="assets/training-final-6.png" alt="Мініатюра 6"></button>
           </div>
-        </div>
-      </div>
+        </div>      </div>
     </section>
 
     <section class="section certificate" id="gift">
-      <div class="wrap cert-box reveal"><div class="cert-copy"><span class="overline">Gift certificate</span><h2 class="h2">Подарунковий сертифікат</h2><p class="lead">Блок під сертифікати: можна зробити “1 заняття”, “для двох”, “командний формат”, додати форму або кнопку оплати.</p><div class="btn-row"><a class="btn primary" href="#join">Замовити сертифікат</a><a class="btn ghost" href="#program">Формати</a></div></div><div class="gift-card"><div class="gift-ticket"><h3>CD Club<br>Training</h3><p>Подарунковий сертифікат на тренування або подію для своєї людини.</p><b>GIFT</b></div></div></div>
+      <div class="wrap cert-box reveal"><div class="cert-copy"><span class="overline">Сертифікати</span><h2 class="h2">Подарунковий сертифікат</h2><p class="lead">Сертифікати на стрілецьке заняття — це досвід, що поєднує адреналін, нові навички та купу вражень! Наші сертифікати доступні в електронному та фізичному форматах, і ти можеш обрати між груповими, парними та індивідуальними заняттями.</p><div class="btn-row"><a class="btn primary" href="#join">Дізнатися деталі</a><a class="btn ghost" href="#program">Формати</a></div></div><div class="gift-card"><img src="assets/giftcard-photo.jpg" alt="Подарункові сертифікати CD Club"></div></div>
     </section>
 
     <section class="section volunteer" id="volunteer">
-      <div class="wrap volunteer-card reveal"><span class="overline">Волонтерство</span><h2 class="h2">Події, збори та підтримка</h2><p class="lead">Окремий блок для волонтерства: збори на спорядження, підтримка військових, відкриті тренування, спільні ініціативи клубу.</p><div class="volunteer-list"><div class="vol-item"><b>01</b><p>Анонси зборів та потреб</p></div><div class="vol-item"><b>02</b><p>Відкриті події спільноти</p></div><div class="vol-item"><b>03</b><p>Звіти та фото після івентів</p></div></div><div class="btn-row"><a href="#join" class="btn primary">Підтримати</a><a href="#footer" class="btn ghost">Контакти</a></div></div>
+      <div class="wrap volunteer-card reveal"><span class="overline">Волонтерство</span><h2 class="h2">Події, збори та підтримка</h2><p class="lead">З першого дня підтримуємо підрозділи на фронті, серед яких: 3 ОШБр, ГУР МОУ, 402 ОСБ, 95 ОДШБр, 110 ОМБр (401 батальйон), 66 ОМБр. Також ми адресно підтримуємо наших клубменів, які стали на захист батьківщини.</p><div class="volunteer-list"><div class="vol-item"><b>1 000 000+ грн</b><p>Зібрано завдяки спільноті на придбання та ремонт авто, дрони, РЕБи, зв’язок та інші критично важливі потреби.</p></div><div class="vol-item"><b>6+</b><p>Підрозділів отримували підтримку від клубу та спільноти.</p></div><div class="vol-item"><b>01</b><p>Підтримуємо наших клубменів, які стали на захист батьківщини.</p></div></div><div class="btn-row"><a href="#join" class="btn primary">Підтримати</a><a href="#footer" class="btn ghost">Контакти</a></div></div>
     </section>
 
-    <section class="section safety" id="safety">
-      <div class="wrap safety-grid"><div class="safety-photo reveal"><img src="assets/hero-3.jpg" alt="Range safety"></div><div class="reveal"><span class="overline">Range safety rules</span><h2 class="h2">Правила безпеки</h2><p class="lead" style="color:#6a6158">Блок зроблений за структурою Honor Shooting Range: три головні правила, короткі пояснення та сильне фото поруч.</p><div class="rules"><article class="rule"><b>1</b><div><h3>Напрямок — тільки безпечний</h3><p>Не направляти зброю туди, куди не можна робити постріл. Контроль напрямку — завжди.</p></div></article><article class="rule"><b>2</b><div><h3>Палець поза спуском</h3><p>Палець на спуску лише тоді, коли є команда, позиція і готовність до виконання вправи.</p></div></article><article class="rule"><b>3</b><div><h3>Контроль стану зброї</h3><p>До виходу на рубіж — перевірка, інструктаж і дія тільки в рамках правил полігону.</p></div></article></div></div></div>
+    <section class="section safety" id="corporate">
+      <div class="wrap safety-grid"><div class="safety-photo reveal"><img src="assets/hero-3.jpg" alt="Тренування для компаній"></div><div class="reveal"><span class="overline">Тренінги під ключ</span><h2 class="h2">Тренування для компаній</h2><p class="lead" style="color:#6a6158">Мінімум теорії — максимум практики та драйву. Формат для друзів, команд, корпоративів і груп, які хочуть отримати нові навички та сильні враження.</p><div class="rules"><article class="rule"><b>1</b><div><h3>Що пропонуємо?</h3><p>Групові заняття для друзів чи однодумців, а також корпоративні заходи: тімбілдінг зі змістом, змагальні стрілецькі вправи, тактичні сценарії та незабутні враження.</p></div></article><article class="rule"><b>2</b><div><h3>Як це працює?</h3><p>Узгоджуємо тему та формат заходу, розробляємо програму тренування — від базових навичок до спеціальних ігрових сценаріїв.</p></div></article><article class="rule"><b>3</b><div><h3>Безпечне проведення</h3><p>Проводимо заняття в безпечних умовах під керівництвом досвідчених інструкторів.</p></div></article></div><div class="btn-row"><a href="#join" class="btn primary">Обговорити захід</a></div></div></div>
     </section>
 
-    <section class="section" id="join" style="background:#151719"><div class="wrap cert-box reveal"><div class="cert-copy"><span class="overline">Запис</span><h2 class="h2">Приєднатися до тренування</h2><p class="lead">Залиш форму, напиши в Instagram або обери формат — далі координатор підтвердить дату, час і деталі.</p><div class="btn-row"><a class="btn primary" href="https://www.instagram.com/cd_club_ua/">Написати в Instagram</a><a class="btn ghost" href="mailto:hello@example.com">Email</a></div></div><img src="assets/hero-1.jpg" alt="Тренування" style="width:100%;height:100%;min-height:380px;object-fit:cover"></div></section>
+    <section class="section" id="join" style="background:#151719"><div class="wrap cert-box reveal"><div class="cert-copy"><span class="overline">Запис</span><h2 class="h2">Приєднатися до тренування</h2><p class="lead">Напиши нам в Instagram чи WhatsApp і ми розкажемо всі деталі.</p><div class="btn-row"><a class="btn primary" href="https://www.instagram.com/cd_club_ua/" target="_blank" rel="noopener">Написати в Instagram</a><a class="btn ghost" href="https://wa.me/380965560545" target="_blank" rel="noopener">WhatsApp</a></div></div><img src="assets/hero-1.jpg" alt="Тренування CD Club" style="width:100%;height:100%;min-height:380px;object-fit:cover"></div></section>
   </main>
 
   <footer class="footer" id="footer">
-    <div class="insta-strip"><img src="assets/hero-1.jpg" alt="Instagram"><img src="assets/hero-2.jpg" alt="Instagram"><img src="assets/hero-3.jpg" alt="Instagram"><img src="assets/portrait.jpg" alt="Instagram"><img src="assets/wide-group.jpg" alt="Instagram"></div>
-    <div class="wrap footer-main"><div class="footer-grid"><div><img class="footer-logo" src="assets/cd-club-logo.svg" alt="CD Club"><p>Спільнота для навчання влучності, тактичної підготовки та відповідальної практики. Demo landing concept.</p></div><div><h4>Menu</h4><p><a href="#program">Навчання</a></p><p><a href="#instructors">Інструктори</a></p><p><a href="#gallery">Галерея</a></p><p><a href="#safety">Безпека</a></p></div><div><h4>Say hello</h4><p>Київська обл.</p><p>10 хв від м. Академмістечко</p><p><a href="https://www.instagram.com/cd_club_ua/">@cd_club_ua</a></p></div><div><h4>Newsletter</h4><p>Залиш email, щоб отримувати анонси тренувань та подій.</p><form class="newsletter"><input type="email" placeholder="Email"><button type="button">Subscribe</button></form></div></div><div class="bottom"><span>© 2026 CD Club. Demo HTML layout.</span><span>Instagram / Telegram / YouTube</span></div></div>
+    <div class="insta-strip">
+      <a href="assets/training-final-1.png" data-lightbox-image="assets/training-final-1.png" aria-label="Відкрити фото 1"><img src="assets/training-final-1.png" alt="Фото з тренувань 1"></a>
+      <a href="assets/training-final-2.png" data-lightbox-image="assets/training-final-2.png" aria-label="Відкрити фото 2"><img src="assets/training-final-2.png" alt="Фото з тренувань 2"></a>
+      <a href="assets/training-final-3.png" data-lightbox-image="assets/training-final-3.png" aria-label="Відкрити фото 3"><img src="assets/training-final-3.png" alt="Фото з тренувань 3"></a>
+      <a href="assets/training-final-4.png" data-lightbox-image="assets/training-final-4.png" aria-label="Відкрити фото 4"><img src="assets/training-final-4.png" alt="Фото з тренувань 4"></a>
+      <a href="assets/training-final-6.png" data-lightbox-image="assets/training-final-6.png" aria-label="Відкрити фото 5"><img src="assets/training-final-6.png" alt="Фото з тренувань 5"></a>
+    </div>
+    <div class="wrap footer-main"><div class="footer-grid"><div><img class="footer-logo" src="assets/cd-club-logo.svg" alt="CD Club"><p>CD Club — спільнота для стрілецької та тактичної підготовки, практичних тренувань, подій і підтримки однодумців.</p></div><div><h4>Меню</h4><p><a href="#about">Хто ми</a></p><p><a href="#program">Навчання</a></p><p><a href="#instructors">Інструктори</a></p><p><a href="#reviews">Відгуки</a></p><p><a href="#gallery">Галерея</a></p><p><a href="#corporate">Для компаній</a></p></div><div><h4>Контакти</h4><p><a href="tel:+380965560545">+38 096 556 0 545</a></p><p><a href="mailto:cdclubua@gmail.com">cdclubua@gmail.com</a></p><p><a href="https://wa.me/380965560545" target="_blank" rel="noopener">WhatsApp</a></p></div><div><h4>Соцмережі</h4><p><a href="https://www.instagram.com/cd_club_ua" target="_blank" rel="noopener">Instagram</a></p><p><a href="https://www.youtube.com/@CDClubUA" target="_blank" rel="noopener">YouTube</a></p><p><a href="https://www.facebook.com/p/Civil-Defense-Club-61551253646767/" target="_blank" rel="noopener">Facebook</a></p></div></div><div class="bottom"><span>© 2026 CD Club.</span><span>Instagram / YouTube / Facebook</span></div></div>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Закрити">×</button>
+      <img id="lightboxImage" src="" alt="Перегляд фото">
+    </div>
+  </div>
 
   <script>
     const nav=document.getElementById('nav'),burger=document.getElementById('burger');
@@ -264,6 +307,54 @@
     document.querySelector('[data-gallery-next]')?.addEventListener('click',()=>{nextGallery();resetGallery()});
     galleryThumbs.forEach(t=>t.addEventListener('click',()=>{showGallery(Number(t.dataset.galleryGo));resetGallery()}));
     showGallery(0);resetGallery();
+
+
+
+    const reviewTrack=document.getElementById('reviewTrack');
+    const reviewCards=[...document.querySelectorAll('.review')];
+    const reviewCurrent=document.getElementById('reviewCurrent');
+    const reviewTotal=document.getElementById('reviewTotal');
+    let reviewIndex=0;
+    function reviewVisibleCount(){return window.matchMedia('(max-width:700px)').matches ? 1 : 2}
+    function showReviews(i){
+      const visible=reviewVisibleCount();
+      const max=Math.max(0, reviewCards.length-visible);
+      reviewIndex=Math.max(0, Math.min(i, max));
+      if(reviewTrack && reviewCards.length){
+        const gap=18;
+        const cardWidth=reviewCards[0].getBoundingClientRect().width;
+        reviewTrack.style.transform=`translateX(${-reviewIndex*(cardWidth+gap)}px)`;
+      }
+      if(reviewCurrent) reviewCurrent.textContent=String(reviewIndex+1).padStart(2,'0');
+      if(reviewTotal) reviewTotal.textContent=String(Math.max(1, reviewCards.length-reviewVisibleCount()+1)).padStart(2,'0');
+    }
+    document.querySelector('[data-review-prev]')?.addEventListener('click',()=>showReviews(reviewIndex-1));
+    document.querySelector('[data-review-next]')?.addEventListener('click',()=>showReviews(reviewIndex+1));
+    window.addEventListener('resize',()=>showReviews(reviewIndex));
+    showReviews(0);
+
+    const lightbox=document.getElementById('lightbox');
+    const lightboxImage=document.getElementById('lightboxImage');
+    const lightboxClose=document.getElementById('lightboxClose');
+    function closeLightbox(){
+      lightbox?.classList.remove('open');
+      if(lightbox) lightbox.setAttribute('aria-hidden','true');
+      if(lightboxImage) lightboxImage.src='';
+    }
+    document.querySelectorAll('[data-lightbox-image]').forEach(link=>{
+      link.addEventListener('click',e=>{
+        e.preventDefault();
+        const src=link.getAttribute('data-lightbox-image');
+        if(lightboxImage && src){
+          lightboxImage.src=src;
+          lightbox?.classList.add('open');
+          lightbox?.setAttribute('aria-hidden','false');
+        }
+      });
+    });
+    lightboxClose?.addEventListener('click',closeLightbox);
+    lightbox?.addEventListener('click',e=>{if(e.target===lightbox) closeLightbox()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape') closeLightbox()});
 
     const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.13});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
