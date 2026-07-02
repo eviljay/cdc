@@ -22,7 +22,6 @@
     .nav{position:sticky;top:0;z-index:40;background:rgba(14,15,17,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
     .nav .inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand img{height:48px}.nav a.back{font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:#ded8d0}.nav a.back:hover{color:var(--accent)}
-    .bmenu{display:flex;gap:20px;font-size:13px;text-transform:uppercase;font-weight:900;letter-spacing:.06em;color:#ded8d0}.bmenu a:hover{color:var(--accent)}.nav-back{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:999px;background:var(--accent);color:#fff;text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:.1em}.nav-back:hover{background:var(--accent2)}@media(max-width:900px){.bmenu{display:none}}
     .head{padding:64px 0 20px}.overline{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.18em;color:var(--accent)}.overline:before{content:"";width:28px;height:2px;background:var(--accent)}
     h1.h1{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:clamp(38px,6vw,72px);line-height:.98;margin:16px 0 8px}
     .list{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;padding:26px 0 80px}
@@ -57,15 +56,7 @@
   <header class="nav">
     <div class="wrap inner">
       <a class="brand" href="index.html"><img src="assets/cd-club-logo.svg" alt="CD Club"></a>
-      <nav class="bmenu">
-        <a href="index.html#about">Хто ми</a>
-        <a href="index.html#program">Навчання</a>
-        <a href="index.html#instructors">Інструктори</a>
-        <a href="index.html#videos">Відео</a>
-        <a href="blog.html">Блог</a>
-        <a href="index.html#corporate">Для компаній</a>
-      </nav>
-      <a class="nav-back" href="index.html">На сайт</a>
+      <a class="back" href="index.html">← На головну</a>
     </div>
   </header>
 
@@ -75,11 +66,11 @@
       <a class="card" href="blog/yak-obraty-bronepliti.html"><img class="cover" loading="lazy" src="assets/hero-2.jpg" alt="Як обрати бронеплити: класи захисту та сертифікації">
         <div class="body"><time>28 червня 2026</time><h2>Як обрати бронеплити: класи захисту та сертифікації</h2>
         <p>Розбираємо, чим відрізняються класи захисту за ДСТУ та NIJ, як правильно розмістити плити й на що звертати увагу при купівлі.</p><span class="more">Читати →</span></div></a>
-      <a class="card" href="blog/testova-pershe-trenuvannia.html"><img class="cover" loading="lazy" src="assets/training-final-5.png" alt="testovaПерше тренування в клубі: чого очікувати новачку">
-        <div class="body"><time>16 червня 2026</time><h2>testovaПерше тренування в клубі: чого очікувати новачку</h2>
-        <p>Що взяти з собою, як проходить заняття та чому не варто хвилюватися перед першим візитом до CD Club.</p><span class="more">Читати →</span></div></a>
       <a class="card" href="blog/pershe-trenuvannia.html"><img class="cover" loading="lazy" src="assets/training-final-6.png" alt="Перше тренування в клубі: чого очікувати новачку">
         <div class="body"><time>15 червня 2026</time><h2>Перше тренування в клубі: чого очікувати новачку</h2>
+        <p>Що взяти з собою, як проходить заняття та чому не варто хвилюватися перед першим візитом до CD Club.</p><span class="more">Читати →</span></div></a>
+      <a class="card" href="blog/testova-pershe-trenuvannia.html"><img class="cover" loading="lazy" src="assets/training-final-5.png" alt="testovaПерше тренування в клубі: чого очікувати новачку">
+        <div class="body"><time>16 червня 2026</time><h2>testovaПерше тренування в клубі: чого очікувати новачку</h2>
         <p>Що взяти з собою, як проходить заняття та чому не варто хвилюватися перед першим візитом до CD Club.</p><span class="more">Читати →</span></div></a>
     </div>
   </main>
@@ -92,7 +83,7 @@
       <h3 id="contactTitle">Напишіть нам</h3>
       <p class="sub">Залиште контакти й питання — ми зв'яжемося з вами найближчим часом.</p>
       <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="7f189a88-d070-4079-b868-5d97e79c9204">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
         <input type="hidden" name="subject" value="Нове звернення з блогу CD Club">
         <input type="hidden" name="from_name" value="Блог CD Club">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
