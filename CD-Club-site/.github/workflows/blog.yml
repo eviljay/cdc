@@ -1,0 +1,45 @@
+name: Build blog pages
+
+# Генерує статичні сторінки блогу з Markdown при кожній зміні статей.
+# Так пошуковики бачать повний текст одразу (пре-рендер).
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "blog/posts/**"
+      - "blog/posts.json"
+      - "tools/build_blog.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install markdown
+
+      - name: Build blog
+        run: python3 tools/build_blog.py
+
+      - name: Commit generated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog/*.html blog.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Без змін"
+          else
+            git commit -m "chore: перезібрано сторінки блогу"
+            git push
+          fi

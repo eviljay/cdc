@@ -1,20 +1,38 @@
-<!doctype html>
-<html lang="uk">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Блог | CD Club</title>
-  <meta name="description" content="Блог CD Club — поради зі стрілецької та тактичної підготовки, розбори спорядження, новини спільноти.">
-  <link rel="icon" href="assets/favicon.ico">
-  <link rel="canonical" href="https://civildefense.club/blog.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CD Club">
-  <meta property="og:title" content="Блог | CD Club">
-  <meta property="og:description" content="Поради зі стрілецької та тактичної підготовки, розбори спорядження, новини спільноти.">
-  <meta property="og:url" content="https://civildefense.club/blog.html">
-  <meta property="og:image" content="https://civildefense.club/assets/hero-1.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Генератор статичного блогу для CD Club.
+Читає blog/posts.json + blog/posts/<slug>.md і створює:
+  - blog/<slug>.html  — окрема SEO-сторінка на кожну статтю (контент вбудований у HTML)
+  - blog.html         — індекс блогу зі списком статей
+  - sitemap.xml       — карта сайту для пошуковиків
+Запускати з кореня репозиторію:  python3 tools/build_blog.py
+"""
+import json, os, html, datetime
+import markdown  # pip install markdown
+
+SITE = "https://civildefense.club"
+DEFAULT_COVER = "assets/hero-1.jpg"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+MONTHS = ["", "січня", "лютого", "березня", "квітня", "травня", "червня",
+          "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"]
+
+def fmt_date(s):
+    try:
+        d = datetime.date.fromisoformat(s[:10])
+        return f"{d.day} {MONTHS[d.month]} {d.year}"
+    except Exception:
+        return s or ""
+
+def abs_url(path):
+    if not path:
+        return ""
+    if path.startswith("http"):
+        return path
+    return SITE + "/" + path.lstrip("/")
+
+STYLE = """
     :root{--bg:#111315;--panel:#1d2023;--text:#f4f0ea;--muted:#b9b1a8;--line:rgba(255,255,255,.11);--accent:#ff6a2d;--accent2:#ff884f;--max:1000px}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}
     img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
@@ -49,30 +67,10 @@
     .field input,.field textarea{width:100%;min-height:50px;border-radius:14px;border:1px solid var(--line);background:#15181b;color:#fff;padding:14px 16px;font-size:15px;font-family:inherit}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field textarea:focus{outline:0;border-color:var(--accent)}
     .modal .btn{width:100%;border:0;cursor:pointer;justify-content:center}.form-note{margin:14px 0 0;font-size:13px;text-align:center}.form-note.ok{color:#7fd18a}.form-note.err{color:#ff8a6a}
     @media(max-width:760px){.list{grid-template-columns:1fr}.contact-fab{right:14px;bottom:14px;height:50px;padding:0 18px}.modal-card{padding:28px 22px}}
-</style>
-</head>
-<body>
+"""
 
-  <header class="nav">
-    <div class="wrap inner">
-      <a class="brand" href="index.html"><img src="assets/cd-club-logo.svg" alt="CD Club"></a>
-      <a class="back" href="index.html">← На головну</a>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <div class="head"><span class="overline">Блог</span><h1 class="h1">Статті та новини</h1></div>
-    <div class="list">
-      <a class="card" href="blog/yak-obraty-bronepliti.html"><img class="cover" loading="lazy" src="assets/hero-2.jpg" alt="Як обрати бронеплити: класи захисту та сертифікації">
-        <div class="body"><time>28 червня 2026</time><h2>Як обрати бронеплити: класи захисту та сертифікації</h2>
-        <p>Розбираємо, чим відрізняються класи захисту за ДСТУ та NIJ, як правильно розмістити плити й на що звертати увагу при купівлі.</p><span class="more">Читати →</span></div></a>
-      <a class="card" href="blog/pershe-trenuvannia.html"><img class="cover" loading="lazy" src="assets/wide-group.jpg" alt="Перше тренування в клубі: чого очікувати новачку">
-        <div class="body"><time>15 червня 2026</time><h2>Перше тренування в клубі: чого очікувати новачку</h2>
-        <p>Що взяти з собою, як проходить заняття та чому не варто хвилюватися перед першим візитом до CD Club.</p><span class="more">Читати →</span></div></a>
-    </div>
-  </main>
-  <footer><div class="wrap">© 2026 CD Club · <a href="index.html" style="color:var(--accent)">civildefense.club</a></div></footer>
-
+# Модалка + плаваюча кнопка + скрипт (спільні для всіх сторінок)
+CONTACT = """
   <button class="contact-fab" id="contactFab" type="button">✉ Зв'язатися</button>
   <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
     <div class="modal-card">
@@ -80,7 +78,7 @@
       <h3 id="contactTitle">Напишіть нам</h3>
       <p class="sub">Залиште контакти й питання — ми зв'яжемося з вами найближчим часом.</p>
       <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="7f189a88-d070-4079-b868-5d97e79c9204">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
         <input type="hidden" name="subject" value="Нове звернення з блогу CD Club">
         <input type="hidden" name="from_name" value="Блог CD Club">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
@@ -112,6 +110,164 @@
        .then(function(){sb.disabled=false;sb.textContent="Надіслати";});});
   })();
   </script>
+"""
 
+NAV = """
+  <header class="nav">
+    <div class="wrap inner">
+      <a class="brand" href="{home}"><img src="{assets}cd-club-logo.svg" alt="CD Club"></a>
+      <a class="back" href="{home}">← На головну</a>
+    </div>
+  </header>
+"""
+
+FOOTER = """  <footer><div class="wrap">© {year} CD Club · <a href="{home}" style="color:var(--accent)">civildefense.club</a></div></footer>"""
+
+
+def post_page(post, body_html):
+    slug = post["slug"]
+    title = post["title"]
+    excerpt = post.get("excerpt", "")
+    cover = post.get("cover") or DEFAULT_COVER
+    url = f"{SITE}/blog/{slug}.html"
+    cover_abs = abs_url(cover)
+    date_iso = post.get("date", "")[:10]
+    cover_img = f'<img class="cover-lead" src="../{cover}" alt="{html.escape(title)}">' if cover else ""
+    return f"""<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{html.escape(title)} | CD Club</title>
+  <meta name="description" content="{html.escape(excerpt)}">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="canonical" href="{url}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CD Club">
+  <meta property="og:title" content="{html.escape(title)}">
+  <meta property="og:description" content="{html.escape(excerpt)}">
+  <meta property="og:url" content="{url}">
+  <meta property="og:image" content="{cover_abs}">
+  <meta property="article:published_time" content="{date_iso}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{html.escape(title)}">
+  <meta name="twitter:description" content="{html.escape(excerpt)}">
+  <meta name="twitter:image" content="{cover_abs}">
+  <script type="application/ld+json">{json.dumps({
+      "@context":"https://schema.org","@type":"BlogPosting","headline":title,
+      "description":excerpt,"image":cover_abs,"datePublished":date_iso,
+      "mainEntityOfPage":url,"author":{"@type":"Organization","name":"CD Club"},
+      "publisher":{"@type":"Organization","name":"CD Club","logo":{"@type":"ImageObject","url":SITE+"/assets/cd-club-logo.svg"}}
+  }, ensure_ascii=False)}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>{STYLE}</style>
+</head>
+<body>
+{NAV.format(home="../index.html", assets="../assets/")}
+  <main class="wrap">
+    <article class="article">
+      <a class="backlink" href="../blog.html">← Усі статті</a>
+      <div class="meta">{fmt_date(post.get('date',''))}</div>
+      <div class="prose">
+        {cover_img}
+        <h1>{html.escape(title)}</h1>
+{body_html}
+      </div>
+      <p style="margin-top:40px"><button class="btn" type="button" data-open-contact>Записатися на тренування</button></p>
+    </article>
+  </main>
+{FOOTER.format(year=datetime.date.today().year, home="../index.html")}
+{CONTACT}
 </body>
 </html>
+"""
+
+
+def index_page(posts):
+    cards = []
+    for p in posts:
+        cover = p.get("cover")
+        cover_img = f'<img class="cover" loading="lazy" src="{cover}" alt="{html.escape(p["title"])}">' if cover else ""
+        cards.append(f"""      <a class="card" href="blog/{p['slug']}.html">{cover_img}
+        <div class="body"><time>{fmt_date(p.get('date',''))}</time><h2>{html.escape(p['title'])}</h2>
+        <p>{html.escape(p.get('excerpt',''))}</p><span class="more">Читати →</span></div></a>""")
+    cards_html = "\n".join(cards)
+    return f"""<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Блог | CD Club</title>
+  <meta name="description" content="Блог CD Club — поради зі стрілецької та тактичної підготовки, розбори спорядження, новини спільноти.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="canonical" href="{SITE}/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CD Club">
+  <meta property="og:title" content="Блог | CD Club">
+  <meta property="og:description" content="Поради зі стрілецької та тактичної підготовки, розбори спорядження, новини спільноти.">
+  <meta property="og:url" content="{SITE}/blog.html">
+  <meta property="og:image" content="{SITE}/{DEFAULT_COVER}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>{STYLE}</style>
+</head>
+<body>
+{NAV.format(home="index.html", assets="assets/")}
+  <main class="wrap">
+    <div class="head"><span class="overline">Блог</span><h1 class="h1">Статті та новини</h1></div>
+    <div class="list">
+{cards_html}
+    </div>
+  </main>
+{FOOTER.format(year=datetime.date.today().year, home="index.html")}
+{CONTACT}
+</body>
+</html>
+"""
+
+
+def sitemap(posts):
+    today = datetime.date.today().isoformat()
+    urls = [(f"{SITE}/", today), (f"{SITE}/blog.html", today)]
+    for p in posts:
+        urls.append((f"{SITE}/blog/{p['slug']}.html", (p.get("date", today) or today)[:10]))
+    items = "\n".join(
+        f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls
+    )
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{items}
+</urlset>
+"""
+
+
+def main():
+    posts = json.load(open(os.path.join(ROOT, "blog", "posts.json"), encoding="utf-8"))
+    md = markdown.Markdown(extensions=["extra", "sane_lists", "smarty"])
+    for p in posts:
+        md.reset()
+        src = open(os.path.join(ROOT, "blog", "posts", p["slug"] + ".md"), encoding="utf-8").read()
+        # прибираємо перший H1 з md — заголовок ми рендеримо окремо
+        lines = src.splitlines()
+        if lines and lines[0].lstrip().startswith("# "):
+            lines = lines[1:]
+        body_html = md.convert("\n".join(lines).strip())
+        # Робимо шляхи до картинок/файлів у тексті кореневими, щоб працювали
+        # на сторінці blog/<slug>.html (пишіть у .md просто assets/foo.jpg).
+        body_html = body_html.replace('src="assets/', 'src="/assets/').replace("src='assets/", "src='/assets/")
+        body_html = body_html.replace('src="./assets/', 'src="/assets/')
+        body_html = body_html.replace('href="assets/', 'href="/assets/')
+        out = post_page(p, body_html)
+        with open(os.path.join(ROOT, "blog", p["slug"] + ".html"), "w", encoding="utf-8") as f:
+            f.write(out)
+        print("  ->", f"blog/{p['slug']}.html")
+    with open(os.path.join(ROOT, "blog.html"), "w", encoding="utf-8") as f:
+        f.write(index_page(posts))
+    print("  -> blog.html")
+    with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write(sitemap(posts))
+    print("  -> sitemap.xml")
+    print(f"Готово: {len(posts)} статей.")
+
+
+if __name__ == "__main__":
+    main()

@@ -7,12 +7,6 @@
   <meta name="description" content="Блог CD Club — поради зі стрілецької та тактичної підготовки, розбори спорядження, новини спільноти.">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="canonical" href="https://civildefense.club/blog.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CD Club">
-  <meta property="og:title" content="Блог | CD Club">
-  <meta property="og:description" content="Поради зі стрілецької та тактичної підготовки, розбори спорядження, новини спільноти.">
-  <meta property="og:url" content="https://civildefense.club/blog.html">
-  <meta property="og:image" content="https://civildefense.club/assets/hero-1.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#111315;--panel:#1d2023;--text:#f4f0ea;--muted:#b9b1a8;--line:rgba(255,255,255,.11);--accent:#ff6a2d;--accent2:#ff884f;--max:1000px}
@@ -36,10 +30,10 @@
     .prose h3{font-size:22px;margin:28px 0 10px}.prose p,.prose li{color:#e4ded6;font-size:17px}.prose ul,.prose ol{padding-left:22px}
     .prose blockquote{margin:26px 0;padding:16px 22px;border-left:3px solid var(--accent);background:#181b1f;border-radius:0 14px 14px 0;color:#cfc7be}
     .prose a{color:var(--accent);text-decoration:underline}.cover-lead{width:100%;aspect-ratio:16/7;object-fit:cover;border-radius:22px;margin-bottom:34px}
-    .prose p img{width:100%;height:auto;border-radius:16px;margin:10px 0}.prose img+em,.prose figcaption{display:block;text-align:center;color:var(--muted);font-size:13px;margin-top:8px}
     .btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;background:var(--accent);color:#fff;text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:.12em}.btn:hover{background:var(--accent2)}
     .backlink{display:inline-block;margin-bottom:24px;color:var(--muted);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.1em}.backlink:hover{color:var(--accent)}
     footer{border-top:1px solid var(--line);padding:26px 0;color:#8a8178;font-size:13px}
+    /* Форма зв'язку */
     .contact-fab{position:fixed;right:22px;bottom:22px;z-index:120;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 24px;border:0;border-radius:999px;background:var(--accent);color:#fff;font-weight:900;text-transform:uppercase;font-size:13px;letter-spacing:.1em;cursor:pointer;box-shadow:0 14px 34px rgba(255,106,45,.4);transition:.22s}.contact-fab:hover{background:var(--accent2);transform:translateY(-2px)}
     .modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(8,9,10,.72);backdrop-filter:blur(6px)}.modal.open{display:flex}
     .modal-card{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:26px;padding:36px;position:relative;max-height:92vh;overflow:auto;box-shadow:0 20px 70px rgba(0,0,0,.36)}
@@ -49,10 +43,9 @@
     .field input,.field textarea{width:100%;min-height:50px;border-radius:14px;border:1px solid var(--line);background:#15181b;color:#fff;padding:14px 16px;font-size:15px;font-family:inherit}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field textarea:focus{outline:0;border-color:var(--accent)}
     .modal .btn{width:100%;border:0;cursor:pointer;justify-content:center}.form-note{margin:14px 0 0;font-size:13px;text-align:center}.form-note.ok{color:#7fd18a}.form-note.err{color:#ff8a6a}
     @media(max-width:760px){.list{grid-template-columns:1fr}.contact-fab{right:14px;bottom:14px;height:50px;padding:0 18px}.modal-card{padding:28px 22px}}
-</style>
+  </style>
 </head>
 <body>
-
   <header class="nav">
     <div class="wrap inner">
       <a class="brand" href="index.html"><img src="assets/cd-club-logo.svg" alt="CD Club"></a>
@@ -61,25 +54,30 @@
   </header>
 
   <main class="wrap">
-    <div class="head"><span class="overline">Блог</span><h1 class="h1">Статті та новини</h1></div>
-    <div class="list">
-      <a class="card" href="blog/yak-obraty-bronepliti.html"><img class="cover" loading="lazy" src="assets/hero-2.jpg" alt="Як обрати бронеплити: класи захисту та сертифікації">
-        <div class="body"><time>28 червня 2026</time><h2>Як обрати бронеплити: класи захисту та сертифікації</h2>
-        <p>Розбираємо, чим відрізняються класи захисту за ДСТУ та NIJ, як правильно розмістити плити й на що звертати увагу при купівлі.</p><span class="more">Читати →</span></div></a>
-      <a class="card" href="blog/pershe-trenuvannia.html"><img class="cover" loading="lazy" src="assets/wide-group.jpg" alt="Перше тренування в клубі: чого очікувати новачку">
-        <div class="body"><time>15 червня 2026</time><h2>Перше тренування в клубі: чого очікувати новачку</h2>
-        <p>Що взяти з собою, як проходить заняття та чому не варто хвилюватися перед першим візитом до CD Club.</p><span class="more">Читати →</span></div></a>
+    <div id="listView">
+      <div class="head"><span class="overline">Блог</span><h1 class="h1">Статті та новини</h1></div>
+      <div class="list" id="postList"></div>
     </div>
+
+    <article class="article" id="articleView" style="display:none">
+      <a class="backlink" href="blog.html">← Усі статті</a>
+      <div class="meta" id="articleMeta"></div>
+      <div class="prose" id="articleBody"></div>
+      <p style="margin-top:40px"><button class="btn" type="button" data-open-contact>Записатися на тренування</button></p>
+    </article>
   </main>
+
   <footer><div class="wrap">© 2026 CD Club · <a href="index.html" style="color:var(--accent)">civildefense.club</a></div></footer>
 
   <button class="contact-fab" id="contactFab" type="button">✉ Зв'язатися</button>
+
   <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
     <div class="modal-card">
       <button class="modal-close" id="contactClose" type="button" aria-label="Закрити">×</button>
       <h3 id="contactTitle">Напишіть нам</h3>
       <p class="sub">Залиште контакти й питання — ми зв'яжемося з вами найближчим часом.</p>
       <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- УВАГА: вставте свій ключ Web3Forms (той самий, що в index.html) -->
         <input type="hidden" name="access_key" value="7f189a88-d070-4079-b868-5d97e79c9204">
         <input type="hidden" name="subject" value="Нове звернення з блогу CD Club">
         <input type="hidden" name="from_name" value="Блог CD Club">
@@ -92,26 +90,94 @@
       </form>
     </div>
   </div>
+
   <script>
-  (function(){var m=document.getElementById('contactModal'),f=document.getElementById('contactFab');
-   function o(){m&&(m.classList.add('open'),m.setAttribute('aria-hidden','false'));}
-   function c(){m&&(m.classList.remove('open'),m.setAttribute('aria-hidden','true'));}
-   f&&f.addEventListener('click',o);var cb=document.getElementById('contactClose');cb&&cb.addEventListener('click',c);
-   m&&m.addEventListener('click',function(e){e.target===m&&c();});
-   document.addEventListener('keydown',function(e){e.key==='Escape'&&c();});
-   document.addEventListener('click',function(e){var t=e.target.closest('[data-open-contact]');if(t){e.preventDefault();o();}});
-   var fm=document.getElementById('contactForm'),n=document.getElementById('cfNote'),sb=document.getElementById('cfSubmit');
-   function note(t,k){if(!n)return;n.textContent=t;n.className='form-note '+k;n.style.display='block';}
-   fm&&fm.addEventListener('submit',function(e){e.preventDefault();
-     if(fm.access_key&&fm.access_key.value.indexOf('YOUR_')===0){note("Форма ще не налаштована: додайте ключ Web3Forms.","err");return;}
-     sb.disabled=true;sb.textContent="Надсилаємо…";
-     fetch(fm.action,{method:'POST',body:new FormData(fm),headers:{'Accept':'application/json'}})
-       .then(function(r){return r.json();})
-       .then(function(d){if(d.success){fm.reset();note("Дякуємо! Ми отримали ваше повідомлення.","ok");}else{note("Не вдалося надіслати. Спробуйте пізніше.","err");}})
-       .catch(function(){note("Помилка мережі. Спробуйте ще раз.","err");})
-       .then(function(){sb.disabled=false;sb.textContent="Надіслати";});});
+  (function () {
+    var modal = document.getElementById('contactModal'), fab = document.getElementById('contactFab');
+    function openModal() { if (modal) { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); } }
+    function closeModal() { if (modal) { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); } }
+    if (fab) fab.addEventListener('click', openModal);
+    var closeBtn = document.getElementById('contactClose');
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    document.addEventListener('click', function (e) {
+      var t = e.target.closest('[data-open-contact]');
+      if (t) { e.preventDefault(); openModal(); }
+    });
+    var form = document.getElementById('contactForm'), note = document.getElementById('cfNote'), submitBtn = document.getElementById('cfSubmit');
+    function showNote(text, cls) { if (!note) return; note.textContent = text; note.className = 'form-note ' + cls; note.style.display = 'block'; }
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (form.access_key && form.access_key.value.indexOf('YOUR_') === 0) {
+          showNote('Форма ще не налаштована: додайте ключ Web3Forms.', 'err'); return;
+        }
+        submitBtn.disabled = true; submitBtn.textContent = 'Надсилаємо…';
+        fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            if (d.success) { form.reset(); showNote('Дякуємо! Ми отримали ваше повідомлення.', 'ok'); }
+            else { showNote('Не вдалося надіслати. Спробуйте пізніше.', 'err'); }
+          })
+          .catch(function () { showNote('Помилка мережі. Спробуйте ще раз.', 'err'); })
+          .then(function () { submitBtn.disabled = false; submitBtn.textContent = 'Надіслати'; });
+      });
+    }
   })();
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var slug = params.get('post');
+    var listView = document.getElementById('listView');
+    var articleView = document.getElementById('articleView');
+
+    function fmtDate(s) {
+      if (!s) return '';
+      try { return new Date(s).toLocaleDateString('uk-UA', { day: '2-digit', month: 'long', year: 'numeric' }); }
+      catch (e) { return s; }
+    }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+    fetch('blog/posts.json', { cache: 'no-cache' })
+      .then(function (r) { return r.json(); })
+      .then(function (posts) {
+        if (slug) { renderArticle(posts); }
+        else { renderList(posts); }
+      })
+      .catch(function () {
+        document.getElementById('postList').innerHTML = '<p style="color:var(--muted)">Не вдалося завантажити статті.</p>';
+      });
+
+    function renderList(posts) {
+      listView.style.display = 'block'; articleView.style.display = 'none';
+      document.getElementById('postList').innerHTML = posts.map(function (p) {
+        var cover = p.cover ? '<img class="cover" loading="lazy" src="' + p.cover + '" alt="' + esc(p.title) + '">' : '';
+        return '<a class="card" href="blog.html?post=' + encodeURIComponent(p.slug) + '">' + cover +
+          '<div class="body"><time>' + fmtDate(p.date) + '</time><h2>' + esc(p.title) + '</h2>' +
+          '<p>' + esc(p.excerpt || '') + '</p><span class="more">Читати →</span></div></a>';
+      }).join('');
+    }
+
+    function renderArticle(posts) {
+      var meta = null;
+      for (var i = 0; i < posts.length; i++) { if (posts[i].slug === slug) { meta = posts[i]; break; } }
+      if (!meta) { location.href = 'blog.html'; return; }
+      listView.style.display = 'none'; articleView.style.display = 'block';
+      document.title = meta.title + ' | CD Club';
+      document.getElementById('articleMeta').textContent = fmtDate(meta.date);
+      fetch('blog/posts/' + slug + '.md', { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw 0; return r.text(); })
+        .then(function (md) {
+          var cover = meta.cover ? '<img class="cover-lead" src="' + meta.cover + '" alt="' + esc(meta.title) + '">' : '';
+          document.getElementById('articleBody').innerHTML = cover + marked.parse(md);
+        })
+        .catch(function () { document.getElementById('articleBody').innerHTML = '<p>Не вдалося завантажити статтю.</p>'; });
+    }
+  })();
+  </script>
 </body>
 </html>
