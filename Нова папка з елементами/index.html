@@ -127,16 +127,6 @@
     .lightbox img{max-width:100%;max-height:88vh;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
     .lightbox-close{position:absolute;top:-14px;right:-14px;width:42px;height:42px;border-radius:50%;border:0;background:#fff;color:#111;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 10px 28px rgba(0,0,0,.24)}
     @media(max-width:700px){.review{flex-basis:100%!important}}
-  /* ===== Партнери ===== */
-  .partners{background:#16181b}.partners-head{text-align:center;max-width:640px;margin:0 auto 34px}.partners-head p{margin:10px auto 0;color:var(--muted)}.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.partner-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:150px;padding:28px;background:linear-gradient(180deg,#191c20,#141619);border:1px solid var(--line);border-radius:24px;transition:.22s}.partner-card:hover{border-color:var(--accent);transform:translateY(-2px)}.partner-card img{height:64px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.9}.partner-card:hover img{opacity:1}.partner-name{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:24px;letter-spacing:.04em}.partner-card small{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
-  /* ===== Відео (YouTube) ===== */
-  .videos{background:#0f1113}.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}.video-card{background:#181b1f;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.22s;display:block}.video-card:hover{border-color:var(--accent);transform:translateY(-3px)}.video-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a0c0d}.video-thumb img{width:100%;height:100%;object-fit:cover}.video-thumb:after{content:"\25B6";position:absolute;inset:0;display:grid;place-items:center;font-size:34px;color:#fff;background:rgba(0,0,0,.28);opacity:.92;transition:.2s}.video-card:hover .video-thumb:after{background:rgba(255,106,45,.5)}.video-body{padding:18px 18px 20px}.video-body h3{font-size:16px;line-height:1.35;margin:0 0 8px;font-weight:700;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.video-body span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:800}.videos-empty{margin-top:30px;color:var(--muted)}
-  /* ===== Блог (прев'ю) ===== */
-  .blogfeed{background:#16181b}.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}.blog-card{background:#181b1f;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.22s;display:flex;flex-direction:column}.blog-card:hover{border-color:var(--accent);transform:translateY(-3px)}.blog-card .cover{aspect-ratio:16/9;object-fit:cover;background:#0a0c0d}.blog-card .body{padding:22px;display:flex;flex-direction:column;flex:1}.blog-card time{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-weight:800}.blog-card h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:24px;line-height:1.05;margin:12px 0 10px}.blog-card p{margin:0 0 16px;color:var(--muted);font-size:15px}.blog-card .more{margin-top:auto;font-weight:900;color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.1em}
-  /* ===== Форма зв'язку ===== */
-  .contact-fab{position:fixed;right:22px;bottom:22px;z-index:120;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 24px;border:0;border-radius:999px;background:var(--accent);color:#fff;font-weight:900;text-transform:uppercase;font-size:13px;letter-spacing:.1em;cursor:pointer;box-shadow:0 14px 34px rgba(255,106,45,.4);transition:.22s}.contact-fab:hover{background:var(--accent2);transform:translateY(-2px)}.modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(8,9,10,.72);backdrop-filter:blur(6px)}.modal.open{display:flex}.modal-card{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:26px;padding:36px;box-shadow:var(--shadow);position:relative;max-height:92vh;overflow:auto}.modal-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:#fff;font-size:22px;cursor:pointer}.modal-close:hover{border-color:var(--accent);color:var(--accent)}.modal-card h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-size:34px;margin:0 0 6px}.modal-card .sub{color:var(--muted);margin:0 0 22px}.field{margin-bottom:16px}.field label{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#cfc7be;margin-bottom:8px}.field input,.field textarea{width:100%;min-height:50px;border-radius:14px;border:1px solid var(--line);background:#15181b;color:#fff;padding:14px 16px;font-size:15px}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field textarea:focus{outline:0;border-color:var(--accent)}.modal .btn{width:100%;border:0;cursor:pointer}.form-note{margin:14px 0 0;font-size:13px;text-align:center}.form-note.ok{color:#7fd18a}.form-note.err{color:#ff8a6a}
-  @media(max-width:940px){.partner-grid,.video-grid,.blog-grid{grid-template-columns:1fr 1fr}}
-  @media(max-width:700px){.partner-grid,.video-grid,.blog-grid{grid-template-columns:1fr}.contact-fab{right:14px;bottom:14px;height:50px;padding:0 18px}.modal-card{padding:28px 22px}}
   .no-js-fallback{display:none}</style>
   <noscript><style>.reveal{opacity:1!important;transform:none!important}.slide.active,.mini-slide.active,.gallery-slide.active{opacity:1!important}</style></noscript>
   <script type="text/javascript">
@@ -219,8 +209,7 @@
         <a href="#program">Навчання</a>
         <a href="#instructors">Інструктори</a>
         <a href="#reviews">Відгуки</a>
-        <a href="#videos">Відео</a>
-        <a href="#blog">Блог</a>
+        <a href="#gift">Сертифікати</a>
         <a href="#corporate">Для компаній</a>
         <a href="#join">Контакти</a>
       </nav>
@@ -359,66 +348,6 @@
         </div>      </div>
     </section>
 
-    <section class="section partners" id="partners">
-      <div class="wrap">
-        <div class="partners-head reveal">
-          <span class="overline">Партнери</span>
-          <h2 class="h2">З ким ми працюємо</h2>
-          <p>Бренди та спільноти, яким ми довіряємо і які підтримують клуб.</p>
-        </div>
-        <div class="partner-grid reveal">
-          <a class="partner-card" href="#" target="_blank" rel="noopener" aria-label="Балістика">
-            <img src="assets/partner-balistika.svg" alt="Балістика" onerror="this.remove()">
-            <span class="partner-name">Балістика</span>
-            <small>Партнер</small>
-          </a>
-          <a class="partner-card" href="#" target="_blank" rel="noopener" aria-label="Крук">
-            <img src="assets/partner-kruk.svg" alt="Крук" onerror="this.remove()">
-            <span class="partner-name">Крук</span>
-            <small>Партнер</small>
-          </a>
-          <a class="partner-card" href="#" target="_blank" rel="noopener" aria-label="Варвар">
-            <img src="assets/partner-varvar.svg" alt="Варвар" onerror="this.remove()">
-            <span class="partner-name">Варвар</span>
-            <small>Партнер</small>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section videos" id="videos">
-      <div class="wrap">
-        <div class="section-head" style="grid-template-columns:1fr auto;color:#f4f0ea">
-          <div>
-            <span class="overline">YouTube</span>
-            <h2 class="h2">Свіжі відео</h2>
-            <p class="lead">Останні ролики з нашого каналу — стрільба, спорядження, розбори та поради.</p>
-          </div>
-          <div class="btn-row" style="margin-top:0;align-self:center">
-            <a class="btn primary" href="https://www.youtube.com/@CDClubUA?sub_confirmation=1" target="_blank" rel="noopener">Перейти на канал</a>
-          </div>
-        </div>
-        <div class="video-grid reveal" id="videoGrid"></div>
-        <p class="videos-empty" id="videosEmpty" style="display:none">Відео завантажуються з каналу. <a href="https://www.youtube.com/@CDClubUA" target="_blank" rel="noopener" style="color:var(--accent)">Дивитися на YouTube →</a></p>
-      </div>
-    </section>
-
-    <section class="section blogfeed" id="blog">
-      <div class="wrap">
-        <div class="section-head" style="grid-template-columns:1fr auto;color:#f4f0ea">
-          <div>
-            <span class="overline">Блог</span>
-            <h2 class="h2">Статті та новини</h2>
-            <p class="lead">Поради з підготовки, розбори спорядження та життя спільноти.</p>
-          </div>
-          <div class="btn-row" style="margin-top:0;align-self:center">
-            <a class="btn ghost" href="blog.html">Усі статті</a>
-          </div>
-        </div>
-        <div class="blog-grid reveal" id="blogGrid"></div>
-      </div>
-    </section>
-
     <section class="section certificate" id="gift">
       <div class="wrap cert-box reveal"><div class="cert-copy"><span class="overline">Сертифікати</span><h2 class="h2">Подарунковий сертифікат</h2><p class="lead">Сертифікати на стрілецьке заняття — це досвід, що поєднує адреналін, нові навички та купу вражень! Наші сертифікати доступні в електронному та фізичному форматах, і ти можеш обрати між груповими, парними та індивідуальними заняттями.</p><div class="btn-row"><a class="btn primary" href="#join">Дізнатися деталі</a><a class="btn ghost" href="#program">Формати</a></div></div><div class="gift-card"><img src="assets/giftcard-photo.jpg" alt="Подарункові сертифікати CD Club"></div></div>
     </section>
@@ -449,28 +378,6 @@
     <div class="lightbox-dialog">
       <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Закрити">×</button>
       <img id="lightboxImage" src="" alt="Перегляд фото">
-    </div>
-  </div>
-
-  <button class="contact-fab" id="contactFab" type="button">✉ Зв'язатися</button>
-
-  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
-    <div class="modal-card">
-      <button class="modal-close" id="contactClose" type="button" aria-label="Закрити">×</button>
-      <h3 id="contactTitle">Напишіть нам</h3>
-      <p class="sub">Залиште контакти й питання — ми зв'яжемося з вами найближчим часом.</p>
-      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-        <!-- УВАГА: вставте свій ключ Web3Forms замість YOUR_WEB3FORMS_ACCESS_KEY (див. README) -->
-        <input type="hidden" name="access_key" value="7f189a88-d070-4079-b868-5d97e79c9204">
-        <input type="hidden" name="subject" value="Нове звернення з сайту CD Club">
-        <input type="hidden" name="from_name" value="Сайт CD Club">
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-        <div class="field"><label for="cfName">Ім'я</label><input id="cfName" type="text" name="name" required placeholder="Як до вас звертатися"></div>
-        <div class="field"><label for="cfContact">Телефон або e-mail</label><input id="cfContact" type="text" name="contact" required placeholder="+38 0__ ___ __ __ або email"></div>
-        <div class="field"><label for="cfMsg">Питання</label><textarea id="cfMsg" name="message" required placeholder="Що вас цікавить?"></textarea></div>
-        <button class="btn primary" type="submit" id="cfSubmit">Надіслати</button>
-        <p class="form-note" id="cfNote" style="display:none"></p>
-      </form>
     </div>
   </div>
 
@@ -739,86 +646,6 @@
   addEvent(document, 'keydown', function (e) {
     if (e.key === 'Escape') closeLightbox();
   });
-})();
-</script>
-
-  <script>
-/* ===== Форма зв'язку, YouTube-відео, прев'ю блогу ===== */
-(function () {
-  var $ = function (id) { return document.getElementById(id); };
-
-  // --- Модальне вікно ---
-  var modal = $('contactModal'), fab = $('contactFab');
-  function openModal() { if (modal) { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); } }
-  function closeModal() { if (modal) { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); } }
-  if (fab) fab.addEventListener('click', openModal);
-  if ($('contactClose')) $('contactClose').addEventListener('click', closeModal);
-  if (modal) modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
-  // Кнопки "Записатися"/"Контакти" теж відкривають форму
-  Array.prototype.forEach.call(document.querySelectorAll('a[href="#join"]'), function (a) {
-    a.addEventListener('click', function (e) { e.preventDefault(); openModal(); });
-  });
-
-  // --- Надсилання форми (Web3Forms) ---
-  var form = $('contactForm'), note = $('cfNote'), submitBtn = $('cfSubmit');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (form.access_key && form.access_key.value.indexOf('YOUR_') === 0) {
-        showNote('Форма ще не налаштована: додайте ключ Web3Forms (див. README).', 'err');
-        return;
-      }
-      submitBtn.disabled = true; submitBtn.textContent = 'Надсилаємо…';
-      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          if (d.success) { form.reset(); showNote('Дякуємо! Ми отримали ваше повідомлення.', 'ok'); }
-          else { showNote('Не вдалося надіслати. Спробуйте пізніше або напишіть у WhatsApp.', 'err'); }
-        })
-        .catch(function () { showNote('Помилка мережі. Спробуйте ще раз.', 'err'); })
-        .then(function () { submitBtn.disabled = false; submitBtn.textContent = 'Надіслати'; });
-    });
-  }
-  function showNote(text, cls) { if (!note) return; note.textContent = text; note.className = 'form-note ' + cls; note.style.display = 'block'; }
-
-  // --- YouTube: свіжі відео з youtube.json ---
-  var vGrid = $('videoGrid'), vEmpty = $('videosEmpty');
-  if (vGrid) {
-    fetch('assets/youtube.json', { cache: 'no-cache' })
-      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (data) {
-        var vids = (data && data.videos) || [];
-        if (!vids.length) throw 0;
-        vGrid.innerHTML = vids.slice(0, 6).map(function (v) {
-          var d = v.published ? new Date(v.published) : null;
-          var date = d ? d.toLocaleDateString('uk-UA', { day: '2-digit', month: 'long', year: 'numeric' }) : '';
-          return '<a class="video-card" href="' + v.url + '" target="_blank" rel="noopener">' +
-            '<div class="video-thumb"><img loading="lazy" src="' + v.thumb + '" alt="' + esc(v.title) + '"></div>' +
-            '<div class="video-body"><h3>' + esc(v.title) + '</h3><span>' + date + '</span></div></a>';
-        }).join('');
-      })
-      .catch(function () { vGrid.style.display = 'none'; if (vEmpty) vEmpty.style.display = 'block'; });
-  }
-
-  // --- Блог: прев'ю останніх постів з blog/posts.json ---
-  var bGrid = $('blogGrid');
-  if (bGrid) {
-    fetch('blog/posts.json', { cache: 'no-cache' })
-      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (posts) {
-        if (!posts || !posts.length) throw 0;
-        bGrid.innerHTML = posts.slice(0, 3).map(function (p) {
-          var d = p.date ? new Date(p.date).toLocaleDateString('uk-UA', { day: '2-digit', month: 'long', year: 'numeric' }) : '';
-          var cover = p.cover ? '<img class="cover" loading="lazy" src="' + p.cover + '" alt="' + esc(p.title) + '">' : '';
-          return '<a class="blog-card" href="blog.html?post=' + encodeURIComponent(p.slug) + '">' + cover +
-            '<div class="body"><time>' + d + '</time><h3>' + esc(p.title) + '</h3><p>' + esc(p.excerpt || '') + '</p><span class="more">Читати →</span></div></a>';
-        }).join('');
-      })
-      .catch(function () { var s = document.getElementById('blog'); if (s) s.style.display = 'none'; });
-  }
-
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 })();
 </script>
 </body>
