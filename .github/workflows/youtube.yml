@@ -1,0 +1,53 @@
+name: Update YouTube videos
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch latest videos
+        env:
+          CHANNEL_ID: UCiwHphv0Th-7--URCJDPa8w
+          MAX_VIDEOS: "6"
+        run: |
+          python3 - <<'PY'
+          import urllib.request, re, json, html, os, datetime
+          cid = os.environ["CHANNEL_ID"]
+          n = int(os.environ.get("MAX_VIDEOS", "6"))
+          url = f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}"
+          req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+          data = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
+          entries = re.findall(r"<entry>(.*?)</entry>", data, re.S)
+          vids = []
+          for e in entries[:n]:
+              vid = re.search(r"<yt:videoId>(.*?)</yt:videoId>", e).group(1)
+              title = html.unescape(re.search(r"<title>(.*?)</title>", e, re.S).group(1))
+              pub = re.search(r"<published>(.*?)</published>", e).group(1)
+              vids.append({"id": vid, "title": title, "published": pub,
+                  "url": f"https://www.youtube.com/watch?v={vid}",
+                  "thumb": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"})
+          out = {"channel": cid, "updated": datetime.datetime.utcnow().isoformat() + "Z", "videos": vids}
+          os.makedirs("assets", exist_ok=True)
+          with open("assets/youtube.json", "w", encoding="utf-8") as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+          print(f"Saved {len(vids)} videos")
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet assets/youtube.json; then
+            echo "No changes"
+          else
+            git add assets/youtube.json
+            git commit -m "chore: update YouTube videos"
+            git push
+          fi
