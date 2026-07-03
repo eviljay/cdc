@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": null,
+  "updated": "2026-07-03T08:49:51.707103Z",
   "videos": [
+    {
+      "id": "g9XWrSEO80g",
+      "title": "Які переваги НВМПЕ бронеплит? #cdclub",
+      "published": "2026-07-02T18:00:37+00:00",
+      "url": "https://www.youtube.com/watch?v=g9XWrSEO80g",
+      "thumb": "https://i.ytimg.com/vi/g9XWrSEO80g/hqdefault.jpg"
+    },
     {
       "id": "-B7F2zcYOOg",
       "title": "Бронеплита Stand Alone (SA) #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-06-26T18:00:30+00:00",
       "url": "https://www.youtube.com/watch?v=akws83F06zs",
       "thumb": "https://i.ytimg.com/vi/akws83F06zs/hqdefault.jpg"
-    },
-    {
-      "id": "Vx8izikxu_g",
-      "title": "Які існують сертифікації для бронеплит? #cdclub",
-      "published": "2026-06-25T18:00:21+00:00",
-      "url": "https://www.youtube.com/watch?v=Vx8izikxu_g",
-      "thumb": "https://i.ytimg.com/vi/Vx8izikxu_g/hqdefault.jpg"
     }
   ]
 }
