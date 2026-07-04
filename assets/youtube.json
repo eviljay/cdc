@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-03T08:49:51.707103Z",
+  "updated": "2026-07-04T08:24:26.135384Z",
   "videos": [
+    {
+      "id": "KFOeBkO2UZQ",
+      "title": "Імба! Ультралегкі плити #cdclub",
+      "published": "2026-07-03T18:00:18+00:00",
+      "url": "https://www.youtube.com/watch?v=KFOeBkO2UZQ",
+      "thumb": "https://i.ytimg.com/vi/KFOeBkO2UZQ/hqdefault.jpg"
+    },
     {
       "id": "g9XWrSEO80g",
       "title": "Які переваги НВМПЕ бронеплит? #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-06-27T17:30:15+00:00",
       "url": "https://www.youtube.com/watch?v=IUGoYpK0_hk",
       "thumb": "https://i.ytimg.com/vi/IUGoYpK0_hk/hqdefault.jpg"
-    },
-    {
-      "id": "akws83F06zs",
-      "title": "Класи захисту за ДСТУ #cdclub",
-      "published": "2026-06-26T18:00:30+00:00",
-      "url": "https://www.youtube.com/watch?v=akws83F06zs",
-      "thumb": "https://i.ytimg.com/vi/akws83F06zs/hqdefault.jpg"
     }
   ]
 }
