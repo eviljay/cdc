@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-04T08:24:26.135384Z",
+  "updated": "2026-07-05T08:41:17.914048Z",
   "videos": [
+    {
+      "id": "b6wP4ftTUqE",
+      "title": "Робота на 250м #military #army #airsoft",
+      "published": "2026-07-04T18:00:31+00:00",
+      "url": "https://www.youtube.com/watch?v=b6wP4ftTUqE",
+      "thumb": "https://i.ytimg.com/vi/b6wP4ftTUqE/hqdefault.jpg"
+    },
     {
       "id": "KFOeBkO2UZQ",
       "title": "Імба! Ультралегкі плити #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-06-28T18:00:10+00:00",
       "url": "https://www.youtube.com/watch?v=-XRP5eexWBs",
       "thumb": "https://i.ytimg.com/vi/-XRP5eexWBs/hqdefault.jpg"
-    },
-    {
-      "id": "IUGoYpK0_hk",
-      "title": "Що таке сертифікація NIJ? #cdclub",
-      "published": "2026-06-27T17:30:15+00:00",
-      "url": "https://www.youtube.com/watch?v=IUGoYpK0_hk",
-      "thumb": "https://i.ytimg.com/vi/IUGoYpK0_hk/hqdefault.jpg"
     }
   ]
 }
