@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-06T09:56:53.501956Z",
+  "updated": "2026-07-07T09:24:25.635019Z",
   "videos": [
+    {
+      "id": "c0TyRkt4Xpc",
+      "title": "Ключова перевага бронеплит з кераміки #cdclub",
+      "published": "2026-07-06T15:00:14+00:00",
+      "url": "https://www.youtube.com/watch?v=c0TyRkt4Xpc",
+      "thumb": "https://i.ytimg.com/vi/c0TyRkt4Xpc/hqdefault.jpg"
+    },
     {
       "id": "b6wP4ftTUqE",
       "title": "Робота на 250м #military #army #airsoft",
@@ -36,13 +43,6 @@
       "published": "2026-06-30T18:00:11+00:00",
       "url": "https://www.youtube.com/watch?v=MFGGsFlB52c",
       "thumb": "https://i.ytimg.com/vi/MFGGsFlB52c/hqdefault.jpg"
-    },
-    {
-      "id": "-XRP5eexWBs",
-      "title": "Як правильно розміщувати бронеплити на тілі? #cdclub",
-      "published": "2026-06-28T18:00:10+00:00",
-      "url": "https://www.youtube.com/watch?v=-XRP5eexWBs",
-      "thumb": "https://i.ytimg.com/vi/-XRP5eexWBs/hqdefault.jpg"
     }
   ]
 }
