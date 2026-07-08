@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-07T09:24:25.635019Z",
+  "updated": "2026-07-08T08:08:39.126047Z",
   "videos": [
+    {
+      "id": "FsaHWi9rfGg",
+      "title": "Як відбувається відстріл бронеплит? #cdclub",
+      "published": "2026-07-07T18:00:33+00:00",
+      "url": "https://www.youtube.com/watch?v=FsaHWi9rfGg",
+      "thumb": "https://i.ytimg.com/vi/FsaHWi9rfGg/hqdefault.jpg"
+    },
     {
       "id": "c0TyRkt4Xpc",
       "title": "Ключова перевага бронеплит з кераміки #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-07-01T16:00:08+00:00",
       "url": "https://www.youtube.com/watch?v=-B7F2zcYOOg",
       "thumb": "https://i.ytimg.com/vi/-B7F2zcYOOg/hqdefault.jpg"
-    },
-    {
-      "id": "MFGGsFlB52c",
-      "title": "Плюси і мінуси бронеплит зі сталі #cdclub",
-      "published": "2026-06-30T18:00:11+00:00",
-      "url": "https://www.youtube.com/watch?v=MFGGsFlB52c",
-      "thumb": "https://i.ytimg.com/vi/MFGGsFlB52c/hqdefault.jpg"
     }
   ]
 }
