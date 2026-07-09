@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-08T08:08:39.126047Z",
+  "updated": "2026-07-09T09:21:58.006394Z",
   "videos": [
+    {
+      "id": "Z-2Z-wP6RnQ",
+      "title": "Остерігайтесь цього при виборі бронеплит #cdclub",
+      "published": "2026-07-08T18:00:09+00:00",
+      "url": "https://www.youtube.com/watch?v=Z-2Z-wP6RnQ",
+      "thumb": "https://i.ytimg.com/vi/Z-2Z-wP6RnQ/hqdefault.jpg"
+    },
     {
       "id": "FsaHWi9rfGg",
       "title": "Як відбувається відстріл бронеплит? #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-07-02T18:00:37+00:00",
       "url": "https://www.youtube.com/watch?v=g9XWrSEO80g",
       "thumb": "https://i.ytimg.com/vi/g9XWrSEO80g/hqdefault.jpg"
-    },
-    {
-      "id": "-B7F2zcYOOg",
-      "title": "Бронеплита Stand Alone (SA) #cdclub",
-      "published": "2026-07-01T16:00:08+00:00",
-      "url": "https://www.youtube.com/watch?v=-B7F2zcYOOg",
-      "thumb": "https://i.ytimg.com/vi/-B7F2zcYOOg/hqdefault.jpg"
     }
   ]
 }
