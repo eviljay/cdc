@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-09T09:21:58.006394Z",
+  "updated": "2026-07-10T09:19:19.378205Z",
   "videos": [
+    {
+      "id": "0ltACfo7g60",
+      "title": "Особливості матеріалів для бронеплит #cdclub",
+      "published": "2026-07-09T17:30:37+00:00",
+      "url": "https://www.youtube.com/watch?v=0ltACfo7g60",
+      "thumb": "https://i.ytimg.com/vi/0ltACfo7g60/hqdefault.jpg"
+    },
     {
       "id": "Z-2Z-wP6RnQ",
       "title": "Остерігайтесь цього при виборі бронеплит #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-07-03T18:00:18+00:00",
       "url": "https://www.youtube.com/watch?v=KFOeBkO2UZQ",
       "thumb": "https://i.ytimg.com/vi/KFOeBkO2UZQ/hqdefault.jpg"
-    },
-    {
-      "id": "g9XWrSEO80g",
-      "title": "Які переваги НВМПЕ бронеплит? #cdclub",
-      "published": "2026-07-02T18:00:37+00:00",
-      "url": "https://www.youtube.com/watch?v=g9XWrSEO80g",
-      "thumb": "https://i.ytimg.com/vi/g9XWrSEO80g/hqdefault.jpg"
     }
   ]
 }
