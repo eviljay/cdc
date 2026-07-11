@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-10T09:19:19.378205Z",
+  "updated": "2026-07-11T07:40:45.119844Z",
   "videos": [
+    {
+      "id": "2Q4K6_KlYMw",
+      "title": "Таке життя 😬 #shorts #military #army",
+      "published": "2026-07-10T16:00:12+00:00",
+      "url": "https://www.youtube.com/watch?v=2Q4K6_KlYMw",
+      "thumb": "https://i.ytimg.com/vi/2Q4K6_KlYMw/hqdefault.jpg"
+    },
     {
       "id": "0ltACfo7g60",
       "title": "Особливості матеріалів для бронеплит #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-07-04T18:00:31+00:00",
       "url": "https://www.youtube.com/watch?v=b6wP4ftTUqE",
       "thumb": "https://i.ytimg.com/vi/b6wP4ftTUqE/hqdefault.jpg"
-    },
-    {
-      "id": "KFOeBkO2UZQ",
-      "title": "Імба! Ультралегкі плити #cdclub",
-      "published": "2026-07-03T18:00:18+00:00",
-      "url": "https://www.youtube.com/watch?v=KFOeBkO2UZQ",
-      "thumb": "https://i.ytimg.com/vi/KFOeBkO2UZQ/hqdefault.jpg"
     }
   ]
 }
