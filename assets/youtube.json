@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-14T07:47:50.220174Z",
+  "updated": "2026-07-15T07:51:00.830074Z",
   "videos": [
+    {
+      "id": "QMAa6OkvRKI",
+      "title": "Ось як проходять наші групові заняття #shorts #cdclub",
+      "published": "2026-07-14T10:45:07+00:00",
+      "url": "https://www.youtube.com/watch?v=QMAa6OkvRKI",
+      "thumb": "https://i.ytimg.com/vi/QMAa6OkvRKI/hqdefault.jpg"
+    },
     {
       "id": "2Q4K6_KlYMw",
       "title": "Таке життя 😬 #shorts #military #army",
@@ -36,13 +43,6 @@
       "published": "2026-07-06T15:00:14+00:00",
       "url": "https://www.youtube.com/watch?v=c0TyRkt4Xpc",
       "thumb": "https://i.ytimg.com/vi/c0TyRkt4Xpc/hqdefault.jpg"
-    },
-    {
-      "id": "b6wP4ftTUqE",
-      "title": "Робота на 250м #military #army #airsoft",
-      "published": "2026-07-04T18:00:31+00:00",
-      "url": "https://www.youtube.com/watch?v=b6wP4ftTUqE",
-      "thumb": "https://i.ytimg.com/vi/b6wP4ftTUqE/hqdefault.jpg"
     }
   ]
 }
