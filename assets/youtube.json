@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-23T08:12:31.739828Z",
+  "updated": "2026-07-24T08:08:20.725597Z",
   "videos": [
+    {
+      "id": "b_LdEai_TGM",
+      "title": "Як привчити себе стріляти двома очима #army #military #cdclub",
+      "published": "2026-07-23T18:01:15+00:00",
+      "url": "https://www.youtube.com/watch?v=b_LdEai_TGM",
+      "thumb": "https://i.ytimg.com/vi/b_LdEai_TGM/hqdefault.jpg"
+    },
     {
       "id": "QMAa6OkvRKI",
       "title": "Ось як проходять наші групові заняття #shorts #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-07-07T18:00:33+00:00",
       "url": "https://www.youtube.com/watch?v=FsaHWi9rfGg",
       "thumb": "https://i.ytimg.com/vi/FsaHWi9rfGg/hqdefault.jpg"
-    },
-    {
-      "id": "c0TyRkt4Xpc",
-      "title": "Ключова перевага бронеплит з кераміки #cdclub",
-      "published": "2026-07-06T15:00:14+00:00",
-      "url": "https://www.youtube.com/watch?v=c0TyRkt4Xpc",
-      "thumb": "https://i.ytimg.com/vi/c0TyRkt4Xpc/hqdefault.jpg"
     }
   ]
 }
