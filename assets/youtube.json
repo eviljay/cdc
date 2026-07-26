@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-07-25T07:51:03.720482Z",
+  "updated": "2026-07-26T08:08:59.309707Z",
   "videos": [
+    {
+      "id": "3oH4iwmPcTg",
+      "title": "Що дає стрільба двома очима? #cdclub",
+      "published": "2026-07-25T17:00:22+00:00",
+      "url": "https://www.youtube.com/watch?v=3oH4iwmPcTg",
+      "thumb": "https://i.ytimg.com/vi/3oH4iwmPcTg/hqdefault.jpg"
+    },
     {
       "id": "b_LdEai_TGM",
       "title": "Як привчити себе стріляти двома очима #army #military #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-07-08T18:00:09+00:00",
       "url": "https://www.youtube.com/watch?v=Z-2Z-wP6RnQ",
       "thumb": "https://i.ytimg.com/vi/Z-2Z-wP6RnQ/hqdefault.jpg"
-    },
-    {
-      "id": "FsaHWi9rfGg",
-      "title": "Як відбувається відстріл бронеплит? #cdclub",
-      "published": "2026-07-07T18:00:33+00:00",
-      "url": "https://www.youtube.com/watch?v=FsaHWi9rfGg",
-      "thumb": "https://i.ytimg.com/vi/FsaHWi9rfGg/hqdefault.jpg"
     }
   ]
 }
