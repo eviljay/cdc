@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-08-01T08:04:01.517186Z",
+  "updated": "2026-08-02T08:05:52.352352Z",
   "videos": [
+    {
+      "id": "RJRDaz3gaCw",
+      "title": "Тренуємо стрільбу двома очима з коліматором #cdclub #shorts",
+      "published": "2026-08-01T18:00:19+00:00",
+      "url": "https://www.youtube.com/watch?v=RJRDaz3gaCw",
+      "thumb": "https://i.ytimg.com/vi/RJRDaz3gaCw/hqdefault.jpg"
+    },
     {
       "id": "7pVW_w7JZzo",
       "title": "Вправа на стрільбу двома очима з механічних прицільних #cdclub #shorts",
@@ -36,13 +43,6 @@
       "published": "2026-07-14T10:45:07+00:00",
       "url": "https://www.youtube.com/watch?v=QMAa6OkvRKI",
       "thumb": "https://i.ytimg.com/vi/QMAa6OkvRKI/hqdefault.jpg"
-    },
-    {
-      "id": "2Q4K6_KlYMw",
-      "title": "Таке життя 😬 #shorts #military #army",
-      "published": "2026-07-10T16:00:12+00:00",
-      "url": "https://www.youtube.com/watch?v=2Q4K6_KlYMw",
-      "thumb": "https://i.ytimg.com/vi/2Q4K6_KlYMw/hqdefault.jpg"
     }
   ]
 }
