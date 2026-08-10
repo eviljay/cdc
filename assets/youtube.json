@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-08-07T07:00:05.556643Z",
+  "updated": "2026-08-10T07:11:00.727304Z",
   "videos": [
+    {
+      "id": "KOpHpvYWK2E",
+      "title": "Weapon quiz! У кого 8/8?",
+      "published": "2026-08-08T08:00:35+00:00",
+      "url": "https://www.youtube.com/watch?v=KOpHpvYWK2E",
+      "thumb": "https://i.ytimg.com/vi/KOpHpvYWK2E/hqdefault.jpg"
+    },
     {
       "id": "6GL-Y3Wlt5c",
       "title": "AR-15+FPV+рухомі мішені #military #army #airsoft",
@@ -36,13 +43,6 @@
       "published": "2026-07-25T17:00:22+00:00",
       "url": "https://www.youtube.com/watch?v=3oH4iwmPcTg",
       "thumb": "https://i.ytimg.com/vi/3oH4iwmPcTg/hqdefault.jpg"
-    },
-    {
-      "id": "b_LdEai_TGM",
-      "title": "Як привчити себе стріляти двома очима #army #military #cdclub",
-      "published": "2026-07-23T18:01:15+00:00",
-      "url": "https://www.youtube.com/watch?v=b_LdEai_TGM",
-      "thumb": "https://i.ytimg.com/vi/b_LdEai_TGM/hqdefault.jpg"
     }
   ]
 }
