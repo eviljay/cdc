@@ -1,7 +1,21 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-08-10T07:11:00.727304Z",
+  "updated": "2026-08-12T07:08:54.003542Z",
   "videos": [
+    {
+      "id": "t8YqIs_U20w",
+      "title": "Скільки потрібно холостити перекладку? #shorts #cdclub",
+      "published": "2026-08-11T17:30:06+00:00",
+      "url": "https://www.youtube.com/watch?v=t8YqIs_U20w",
+      "thumb": "https://i.ytimg.com/vi/t8YqIs_U20w/hqdefault.jpg"
+    },
+    {
+      "id": "LRL-supZyRM",
+      "title": "Холощення | Повна і неповна перекладка #cdclub",
+      "published": "2026-08-10T17:00:14+00:00",
+      "url": "https://www.youtube.com/watch?v=LRL-supZyRM",
+      "thumb": "https://i.ytimg.com/vi/LRL-supZyRM/hqdefault.jpg"
+    },
     {
       "id": "KOpHpvYWK2E",
       "title": "Weapon quiz! У кого 8/8?",
@@ -29,20 +43,6 @@
       "published": "2026-07-31T17:30:04+00:00",
       "url": "https://www.youtube.com/watch?v=7pVW_w7JZzo",
       "thumb": "https://i.ytimg.com/vi/7pVW_w7JZzo/hqdefault.jpg"
-    },
-    {
-      "id": "kWE2IDdqub8",
-      "title": "Проста вправа, щоб стріляти двома очима #cdclub #shorts",
-      "published": "2026-07-27T10:00:10+00:00",
-      "url": "https://www.youtube.com/watch?v=kWE2IDdqub8",
-      "thumb": "https://i.ytimg.com/vi/kWE2IDdqub8/hqdefault.jpg"
-    },
-    {
-      "id": "3oH4iwmPcTg",
-      "title": "Що дає стрільба двома очима? #cdclub #shorts",
-      "published": "2026-07-25T17:00:22+00:00",
-      "url": "https://www.youtube.com/watch?v=3oH4iwmPcTg",
-      "thumb": "https://i.ytimg.com/vi/3oH4iwmPcTg/hqdefault.jpg"
     }
   ]
 }
