@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-08-14T07:09:21.440302Z",
+  "updated": "2026-08-16T06:23:13.517225Z",
   "videos": [
+    {
+      "id": "t4fGRCtljdQ",
+      "title": "Холостимо повну перекладку #shorts #cdclub",
+      "published": "2026-08-15T09:00:17+00:00",
+      "url": "https://www.youtube.com/watch?v=t4fGRCtljdQ",
+      "thumb": "https://i.ytimg.com/vi/t4fGRCtljdQ/hqdefault.jpg"
+    },
     {
       "id": "AwydEPaLpLY",
       "title": "Як холостити неповну перекладку #shorts #cdclub",
@@ -36,13 +43,6 @@
       "published": "2026-08-05T15:00:38+00:00",
       "url": "https://www.youtube.com/watch?v=6GL-Y3Wlt5c",
       "thumb": "https://i.ytimg.com/vi/6GL-Y3Wlt5c/hqdefault.jpg"
-    },
-    {
-      "id": "RJRDaz3gaCw",
-      "title": "Тренуємо стрільбу двома очима з коліматором #cdclub #shorts",
-      "published": "2026-08-01T18:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=RJRDaz3gaCw",
-      "thumb": "https://i.ytimg.com/vi/RJRDaz3gaCw/hqdefault.jpg"
     }
   ]
 }
