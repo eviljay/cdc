@@ -1,7 +1,21 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-08-17T06:34:00.826330Z",
+  "updated": "2026-08-23T06:23:43.150440Z",
   "videos": [
+    {
+      "id": "rydOiEeR-4Q",
+      "title": "Для чого потрібна вправа «Мозамбік»? #cdclub #shorts",
+      "published": "2026-08-21T18:00:15+00:00",
+      "url": "https://www.youtube.com/watch?v=rydOiEeR-4Q",
+      "thumb": "https://i.ytimg.com/vi/rydOiEeR-4Q/hqdefault.jpg"
+    },
+    {
+      "id": "1eDcpoJ0guc",
+      "title": "Вправа «Мозамбік» з карабіном",
+      "published": "2026-08-20T04:00:36+00:00",
+      "url": "https://www.youtube.com/watch?v=1eDcpoJ0guc",
+      "thumb": "https://i.ytimg.com/vi/1eDcpoJ0guc/hqdefault.jpg"
+    },
     {
       "id": "t4fGRCtljdQ",
       "title": "Холостимо повну перекладку #shorts #cdclub",
@@ -29,20 +43,6 @@
       "published": "2026-08-10T17:00:14+00:00",
       "url": "https://www.youtube.com/watch?v=LRL-supZyRM",
       "thumb": "https://i.ytimg.com/vi/LRL-supZyRM/hqdefault.jpg"
-    },
-    {
-      "id": "KOpHpvYWK2E",
-      "title": "Weapon quiz! У кого 8/8?",
-      "published": "2026-08-08T08:00:35+00:00",
-      "url": "https://www.youtube.com/watch?v=KOpHpvYWK2E",
-      "thumb": "https://i.ytimg.com/vi/KOpHpvYWK2E/hqdefault.jpg"
-    },
-    {
-      "id": "6GL-Y3Wlt5c",
-      "title": "AR-15+FPV+рухомі мішені #military #army #airsoft",
-      "published": "2026-08-05T15:00:38+00:00",
-      "url": "https://www.youtube.com/watch?v=6GL-Y3Wlt5c",
-      "thumb": "https://i.ytimg.com/vi/6GL-Y3Wlt5c/hqdefault.jpg"
     }
   ]
 }
