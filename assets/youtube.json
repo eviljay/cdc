@@ -1,7 +1,21 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-08-23T06:23:43.150440Z",
+  "updated": "2026-08-27T17:06:16.790797Z",
   "videos": [
+    {
+      "id": "DnD5uoXqwik",
+      "title": "Вправа «Мозамбік» з різних положень #cdclub #shorts",
+      "published": "2026-08-26T18:00:34+00:00",
+      "url": "https://www.youtube.com/watch?v=DnD5uoXqwik",
+      "thumb": "https://i.ytimg.com/vi/DnD5uoXqwik/hqdefault.jpg"
+    },
+    {
+      "id": "YDmL6qUu1ew",
+      "title": "Чому вправу «Мозамбік» варто робити на різних дистанціях? #cdclub #shorts",
+      "published": "2026-08-23T18:00:39+00:00",
+      "url": "https://www.youtube.com/watch?v=YDmL6qUu1ew",
+      "thumb": "https://i.ytimg.com/vi/YDmL6qUu1ew/hqdefault.jpg"
+    },
     {
       "id": "rydOiEeR-4Q",
       "title": "Для чого потрібна вправа «Мозамбік»? #cdclub #shorts",
@@ -29,20 +43,6 @@
       "published": "2026-08-13T18:00:21+00:00",
       "url": "https://www.youtube.com/watch?v=AwydEPaLpLY",
       "thumb": "https://i.ytimg.com/vi/AwydEPaLpLY/hqdefault.jpg"
-    },
-    {
-      "id": "t8YqIs_U20w",
-      "title": "Скільки потрібно холостити перекладку? #shorts #cdclub",
-      "published": "2026-08-11T17:30:06+00:00",
-      "url": "https://www.youtube.com/watch?v=t8YqIs_U20w",
-      "thumb": "https://i.ytimg.com/vi/t8YqIs_U20w/hqdefault.jpg"
-    },
-    {
-      "id": "LRL-supZyRM",
-      "title": "Холощення | Повна і неповна перекладка #cdclub",
-      "published": "2026-08-10T17:00:14+00:00",
-      "url": "https://www.youtube.com/watch?v=LRL-supZyRM",
-      "thumb": "https://i.ytimg.com/vi/LRL-supZyRM/hqdefault.jpg"
     }
   ]
 }
