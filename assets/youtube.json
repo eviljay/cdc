@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-09-24T10:45:17.400372Z",
+  "updated": "2026-09-25T10:49:54.949677Z",
   "videos": [
+    {
+      "id": "jSzzOZQH3Gs",
+      "title": "Тактична ліга | парна естафета #military #army",
+      "published": "2026-09-24T18:00:02+00:00",
+      "url": "https://www.youtube.com/watch?v=jSzzOZQH3Gs",
+      "thumb": "https://i.ytimg.com/vi/jSzzOZQH3Gs/hqdefault.jpg"
+    },
     {
       "id": "DnD5uoXqwik",
       "title": "Вправа «Мозамбік» з різних положень #cdclub #shorts",
@@ -36,13 +43,6 @@
       "published": "2026-08-15T09:00:17+00:00",
       "url": "https://www.youtube.com/watch?v=t4fGRCtljdQ",
       "thumb": "https://i.ytimg.com/vi/t4fGRCtljdQ/hqdefault.jpg"
-    },
-    {
-      "id": "AwydEPaLpLY",
-      "title": "Як холостити неповну перекладку #shorts #cdclub",
-      "published": "2026-08-13T18:00:21+00:00",
-      "url": "https://www.youtube.com/watch?v=AwydEPaLpLY",
-      "thumb": "https://i.ytimg.com/vi/AwydEPaLpLY/hqdefault.jpg"
     }
   ]
 }
