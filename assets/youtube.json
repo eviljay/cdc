@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-10-06T12:26:06.567821Z",
+  "updated": "2026-10-07T12:19:06.620525Z",
   "videos": [
+    {
+      "id": "EoidcnHL6Ek",
+      "title": "Ну було ж, правда?😬",
+      "published": "2026-10-06T17:30:13+00:00",
+      "url": "https://www.youtube.com/watch?v=EoidcnHL6Ek",
+      "thumb": "https://i.ytimg.com/vi/EoidcnHL6Ek/hqdefault.jpg"
+    },
     {
       "id": "jSzzOZQH3Gs",
       "title": "Тактична ліга | парна естафета #military #army",
@@ -36,13 +43,6 @@
       "published": "2026-08-20T04:00:36+00:00",
       "url": "https://www.youtube.com/watch?v=1eDcpoJ0guc",
       "thumb": "https://i.ytimg.com/vi/1eDcpoJ0guc/hqdefault.jpg"
-    },
-    {
-      "id": "t4fGRCtljdQ",
-      "title": "Холостимо повну перекладку #shorts #cdclub",
-      "published": "2026-08-15T09:00:17+00:00",
-      "url": "https://www.youtube.com/watch?v=t4fGRCtljdQ",
-      "thumb": "https://i.ytimg.com/vi/t4fGRCtljdQ/hqdefault.jpg"
     }
   ]
 }
