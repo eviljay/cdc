@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-10-13T13:11:21.539382Z",
+  "updated": "2026-10-14T10:51:50.385660Z",
   "videos": [
+    {
+      "id": "miFxf4QkZSU",
+      "title": "Мультивправа на точність, швидкість і перенос",
+      "published": "2026-10-13T19:11:01+00:00",
+      "url": "https://www.youtube.com/watch?v=miFxf4QkZSU",
+      "thumb": "https://i.ytimg.com/vi/miFxf4QkZSU/hqdefault.jpg"
+    },
     {
       "id": "EoidcnHL6Ek",
       "title": "Ну було ж, правда?😬",
@@ -36,13 +43,6 @@
       "published": "2026-08-21T18:00:15+00:00",
       "url": "https://www.youtube.com/watch?v=rydOiEeR-4Q",
       "thumb": "https://i.ytimg.com/vi/rydOiEeR-4Q/hqdefault.jpg"
-    },
-    {
-      "id": "1eDcpoJ0guc",
-      "title": "Вправа «Мозамбік» з карабіном",
-      "published": "2026-08-20T04:00:36+00:00",
-      "url": "https://www.youtube.com/watch?v=1eDcpoJ0guc",
-      "thumb": "https://i.ytimg.com/vi/1eDcpoJ0guc/hqdefault.jpg"
     }
   ]
 }
