@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-10-20T10:39:42.977451Z",
+  "updated": "2026-10-21T10:50:27.147448Z",
   "videos": [
+    {
+      "id": "-7wfGZDvbZY",
+      "title": "Стрілецька вправа 3-в-1 #cdclub #shorts",
+      "published": "2026-10-20T18:30:30+00:00",
+      "url": "https://www.youtube.com/watch?v=-7wfGZDvbZY",
+      "thumb": "https://i.ytimg.com/vi/-7wfGZDvbZY/hqdefault.jpg"
+    },
     {
       "id": "miFxf4QkZSU",
       "title": "Мультивправа на точність, швидкість і перенос",
@@ -36,13 +43,6 @@
       "published": "2026-08-23T18:00:39+00:00",
       "url": "https://www.youtube.com/watch?v=YDmL6qUu1ew",
       "thumb": "https://i.ytimg.com/vi/YDmL6qUu1ew/hqdefault.jpg"
-    },
-    {
-      "id": "rydOiEeR-4Q",
-      "title": "Для чого потрібна вправа «Мозамбік»? #cdclub #shorts",
-      "published": "2026-08-21T18:00:15+00:00",
-      "url": "https://www.youtube.com/watch?v=rydOiEeR-4Q",
-      "thumb": "https://i.ytimg.com/vi/rydOiEeR-4Q/hqdefault.jpg"
     }
   ]
 }
