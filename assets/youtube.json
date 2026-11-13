@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-11-12T14:16:37.611269Z",
+  "updated": "2026-11-13T13:38:36.356941Z",
   "videos": [
+    {
+      "id": "S4tDYiirpAM",
+      "title": "Тримаємо менталку як можемо 🙃",
+      "published": "2026-11-12T16:00:06+00:00",
+      "url": "https://www.youtube.com/watch?v=S4tDYiirpAM",
+      "thumb": "https://i.ytimg.com/vi/S4tDYiirpAM/hqdefault.jpg"
+    },
     {
       "id": "-7wfGZDvbZY",
       "title": "Стрілецька вправа 3-в-1 #cdclub #shorts",
@@ -36,13 +43,6 @@
       "published": "2026-08-26T18:00:34+00:00",
       "url": "https://www.youtube.com/watch?v=DnD5uoXqwik",
       "thumb": "https://i.ytimg.com/vi/DnD5uoXqwik/hqdefault.jpg"
-    },
-    {
-      "id": "YDmL6qUu1ew",
-      "title": "Чому вправу «Мозамбік» варто робити на різних дистанціях? #cdclub #shorts",
-      "published": "2026-08-23T18:00:39+00:00",
-      "url": "https://www.youtube.com/watch?v=YDmL6qUu1ew",
-      "thumb": "https://i.ytimg.com/vi/YDmL6qUu1ew/hqdefault.jpg"
     }
   ]
 }
