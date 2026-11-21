@@ -1,7 +1,14 @@
 {
   "channel": "UCiwHphv0Th-7--URCJDPa8w",
-  "updated": "2026-11-20T14:36:35.132325Z",
+  "updated": "2026-11-21T13:54:20.764492Z",
   "videos": [
+    {
+      "id": "Q2iOSN7tR0I",
+      "title": "Додаємо нестандартних положень",
+      "published": "2026-11-21T09:00:26+00:00",
+      "url": "https://www.youtube.com/watch?v=Q2iOSN7tR0I",
+      "thumb": "https://i.ytimg.com/vi/Q2iOSN7tR0I/hqdefault.jpg"
+    },
     {
       "id": "S4tDYiirpAM",
       "title": "Тримаємо менталку як можемо 🙃",
@@ -36,13 +43,6 @@
       "published": "2026-09-24T18:00:02+00:00",
       "url": "https://www.youtube.com/watch?v=jSzzOZQH3Gs",
       "thumb": "https://i.ytimg.com/vi/jSzzOZQH3Gs/hqdefault.jpg"
-    },
-    {
-      "id": "DnD5uoXqwik",
-      "title": "Вправа «Мозамбік» з різних положень #cdclub #shorts",
-      "published": "2026-08-26T18:00:34+00:00",
-      "url": "https://www.youtube.com/watch?v=DnD5uoXqwik",
-      "thumb": "https://i.ytimg.com/vi/DnD5uoXqwik/hqdefault.jpg"
     }
   ]
 }
